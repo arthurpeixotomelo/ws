@@ -1,0 +1,64 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "deno.ns",
+      "deno.unstable",
+      "dom",
+      "dom.iterable",
+      "dom.asynciterable",
+      "webworker",
+      "webworker.iterable",
+      "webworker.asynciterable",
+      "webworker.importscripts"
+    ]
+  },
+  "fmt": {
+    "singleQuote": true,
+    "semiColons": false,
+    "trailingCommas": "never"
+  },
+  "lint": {
+    "rules": {
+      "tags": [
+        "jsr",
+        "jsx",
+        "react",
+        "recommended",
+        "workspace"
+      ],
+      "include": [
+        "ban-untagged-todo",
+        "camelcase",
+        "default-param-last",
+        "eqeqeq",
+        "explicit-function-return-type",
+        "explicit-module-boundary-types",
+        "guard-for-in",
+        "no-await-in-loop",
+        "no-const-assign",
+        "no-non-null-asserted-optional-chain",
+        "no-non-null-assertion",
+        "no-undef",
+        "no-useless-rename",
+        "no-self-compare",
+        "no-sparse-arrays",
+        "no-sync-fn-in-async-fn",
+        "no-throw-literal"
+      ],
+      "exclude": [
+        "no-sloppy-imports"
+      ]
+    }
+  },
+  "unstable": [
+    "bundle",
+    "cron",
+    "fmt-sql",
+    "fmt-component",
+    "kv",
+    "sloppy-imports",
+    "tsgo",
+    "webgpu",
+    "worker-options"
+  ]
+}

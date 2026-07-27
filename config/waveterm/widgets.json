@@ -1,0 +1,15 @@
+{
+  "defwidget@terminal": {
+    "display:order": -5,
+    "icon": "square-terminal",
+    "label": "NU",
+    "color": "green",
+    "blockdef": {
+      "meta": {
+        "view": "term",
+        "controller": "shell",
+        "cmd:initscript": "clear;nu"
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+'$schema' = 'https://starship.rs/config-schema.json'
+command_timeout = 3600000
+
+[aws]
+symbol = 'aws '
+
+[azure]
+symbol = 'az '
+
+[cmd_duration]
+min_time = 0
+show_milliseconds = true
+
+[directory]
+home_symbol = 'home'
+
+[deno]
+symbol = 'deno '
+detect_extensions = ['js', 'mjs', 'ts', 'mts']
+detect_files = ['package.json', 'deno.json', 'deno.jsonc', 'deno.lock']
+detect_folders = ['node_modules']
+
+[git_branch]
+symbol = 'branch '
+
+[git_commit]
+tag_symbol = ' tag '
+tag_disabled = false
+
+[git_metrics]
+disabled = false
+
+[git_status]
+ahead = '⇡${count}'
+behind = '⇣${count}'
+
+[kubernetes]
+disabled = false
+detect_files = ['k3s', 'k8s']
+
+[nodejs]
+disabled = true
+
+[os]
+disabled = false
+format = 'on [($name )]($style)'
+
+[python]
+symbol = 'py '
+
+[rust]
+symbol = 'rs '
+
+[status]
+disabled = false
+format = '[$symbol]($style) '

@@ -1,0 +1,14 @@
+{
+  "servers": {
+    "llmsContext": {
+      "type": "stdio",
+      "command": "deno",
+      "args": ["run", "-A", "npm:@upstash/context7-mcp"]
+    },
+    "nushell": {
+      "type": "stdio",
+      "command": "nu",
+      "args": ["--mcp"]
+    }
+  }
+}

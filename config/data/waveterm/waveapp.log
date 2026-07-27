@@ -1,0 +1,1017 @@
+2026-07-27 01:18:54.442 waveterm-app starting, data_dir=C:\Users\arthu\workspaces\config\data\waveterm, config_dir=C:\Users\arthu\workspaces\config\waveterm electronpath=C:\Users\arthu\AppData\Local\Programs\waveterm\resources\app.asar\dist gopath=C:\Users\arthu\AppData\Local\Programs\waveterm\resources\app.asar.unpacked\dist arch=win32/x64 electron=41.1.0
+2026-07-27 01:18:54.445 trying to run local server C:\Users\arthu\AppData\Local\Programs\waveterm\resources\app.asar.unpacked\dist\bin\wavesrv.x64.exe
+2026-07-27 01:18:54.457 spawned wavesrv
+2026-07-27 01:18:54.491 [wavesrv] wshrouter register link 1#[control]
+2026-07-27 01:18:54.491 [wavesrv] wshrouter trust link 1#[control] kind=leaf
+2026-07-27 01:18:54.491 [wavesrv] wshrouter registered control route "$control" linkid=1
+2026-07-27 01:18:54.491 [wavesrv] wshrouter registered control:root route linkid=1
+2026-07-27 01:18:54.491 [wavesrv] link recvloop start for 1#[control]
+2026-07-27 01:18:54.491 [wavesrv] [base] acquiring lock on C:\Users\arthu\workspaces\config\data\waveterm\wave.lock
+2026-07-27 01:18:54.492 [wavesrv] wave version: 0.14.5 (202604161539)
+2026-07-27 01:18:54.492 [wavesrv] wave data dir: C:\Users\arthu\workspaces\config\data\waveterm
+2026-07-27 01:18:54.492 [wavesrv] wave config dir: C:\Users\arthu\workspaces\config\waveterm
+2026-07-27 01:18:54.492 [wavesrv] [db] opening db C:\Users\arthu\workspaces\config\data\waveterm\db\filestore.db
+2026-07-27 01:18:54.492 [wavesrv] migrate filestore
+2026-07-27 01:18:54.502 [wavesrv] [db] filestore migration done, version 0 -> 1
+2026-07-27 01:18:54.502 [wavesrv] filestore initialized
+2026-07-27 01:18:54.502 [wavesrv] migrate wstore
+2026-07-27 01:18:54.518 [wavesrv] [db] wstore migration done, version 0 -> 11
+2026-07-27 01:18:54.518 [wavesrv] wstore initialized
+2026-07-27 01:18:54.518 [wavesrv] initializing wsh and shell startup files
+2026-07-27 01:18:54.519 [wavesrv] client.TempOID is empty
+2026-07-27 01:18:54.519 [wavesrv] client.InstallId is empty
+2026-07-27 01:18:54.519 [wavesrv] clientid: a167a0b6-0937-40ad-b59e-ddebf82504a0
+2026-07-27 01:18:54.520 [wavesrv] client has no windows and first launch, creating starter workspace
+2026-07-27 01:18:54.522 [wavesrv] CreateWindow <nil> e222771f-3d78-4fc3-affe-3dcf59879f61
+2026-07-27 01:18:54.526 [wavesrv] first launch detected
+2026-07-27 01:18:54.529 [wavesrv] JWT Public Key:
+2026-07-27 01:18:54.529 -----BEGIN PUBLIC KEY-----
+2026-07-27 01:18:54.529 MCowBQYDK2VwAyEAmjYHCUeZterCqiI7ePSRpQfVwaqW+X1XXn52t5wmTD0=
+2026-07-27 01:18:54.529 -----END PUBLIC KEY-----
+2026-07-27 01:18:54.529 [wavesrv] wshrouter register link 2#[main-client]
+2026-07-27 01:18:54.529 [wavesrv] wshrouter trust link 2#[main-client] kind=leaf
+2026-07-27 01:18:54.529 [wavesrv] wshrouter bind route "wavesrv" to 2#[main-client]
+2026-07-27 01:18:54.530 [wavesrv] wshrouter register link 3#[bare-client]
+2026-07-27 01:18:54.530 [wavesrv] wshrouter trust link 3#[bare-client] kind=leaf
+2026-07-27 01:18:54.530 [wavesrv] wshrouter bind route "bare:182d4331-3ea1-48f2-971e-cb7f72ba1ffa" to 3#[bare-client]
+2026-07-27 01:18:54.530 [wavesrv] wshrouter register link 4#[conn:local]
+2026-07-27 01:18:54.530 [wavesrv] wshrouter trust link 4#[conn:local] kind=leaf
+2026-07-27 01:18:54.530 [wavesrv] wshrouter bind route "conn:local" to 4#[conn:local]
+2026-07-27 01:18:54.530 [wavesrv] create config watcher, configdir="C:\\Users\\arthu\\workspaces\\config\\waveterm"
+2026-07-27 01:18:54.530 [wavesrv] link recvloop start for 3#[bare-client]
+2026-07-27 01:18:54.530 [wavesrv] link recvloop start for 2#[main-client]
+2026-07-27 01:18:54.530 [wavesrv] link recvloop start for 4#[conn:local]
+2026-07-27 01:18:54.530 [wavesrv] subdirs: [C:\Users\arthu\workspaces\config\waveterm\mimetypes C:\Users\arthu\workspaces\config\waveterm\defaultwidgets C:\Users\arthu\workspaces\config\waveterm\widgets C:\Users\arthu\workspaces\config\waveterm\presets C:\Users\arthu\workspaces\config\waveterm\backgrounds C:\Users\arthu\workspaces\config\waveterm\termthemes C:\Users\arthu\workspaces\config\waveterm\connections C:\Users\arthu\workspaces\config\waveterm\bookmarks C:\Users\arthu\workspaces\config\waveterm\waveai]
+2026-07-27 01:18:54.533 [wavesrv] starting file watcher
+2026-07-27 01:18:54.537 [wavesrv] AI mode config watcher initialized
+2026-07-27 01:18:54.538 [wavesrv] initializing badge store
+2026-07-27 01:18:54.540 [wavesrv] Server [web] listening on 127.0.0.1:62013
+2026-07-27 01:18:54.540 [wavesrv] Server [websocket] listening on 127.0.0.1:62014
+2026-07-27 01:18:54.541 [wavesrv] [websocket] running websocket server on 127.0.0.1:62014
+2026-07-27 01:18:54.542 [wavesrv] Server [unix-domain] listening on C:\Users\arthu\workspaces\config\data\waveterm\wave.sock
+2026-07-27 01:18:54.543 wavesrv ready signal received true 100 ms
+2026-07-27 01:18:54.553 [wavesrv] Schema is nil, initializing
+2026-07-27 01:18:54.553 [wavesrv] Found static site at C:\Users\arthu\AppData\Local\Programs\waveterm\resources\app.asar.unpacked\dist\schema, serving
+2026-07-27 01:18:54.565 [wavesrv] wsh binary successfully copied from "wsh-0.14.5-windows.x64.exe" to "C:\\Users\\arthu\\workspaces\\config\\data\\waveterm\\bin\\wsh.exe"
+2026-07-27 01:18:54.581 [wavesrv] [websocket] new connection: connid:f5f90bf4-67c8-4322-b3c4-7bf9823f1beb stableid:electron
+2026-07-27 01:18:54.581 [wavesrv] wshrouter register link 5#[ws:electron]
+2026-07-27 01:18:54.581 [wavesrv] wshrouter trust link 5#[ws:electron] kind=router
+2026-07-27 01:18:54.581 [wavesrv] link recvloop start for 5#[ws:electron]
+2026-07-27 01:18:54.581 [wavesrv] wshrouter bind route "electron" to 5#[ws:electron]
+2026-07-27 01:18:54.698 ensureHotSpareTab
+2026-07-27 01:18:54.699 createBareTabView
+2026-07-27 01:18:54.712 relaunchBrowserWindows
+2026-07-27 01:18:54.774 [wavesrv] GetClientData
+2026-07-27 01:18:54.779 [service] client.GetClientData | 67ms
+2026-07-27 01:18:54.784 [service] window.GetWindow | 3ms
+2026-07-27 01:18:54.785 relaunch -- creating window 49d2f415-1535-43e9-95ad-bd61a84c0934 {
+  oid: '49d2f415-1535-43e9-95ad-bd61a84c0934',
+  version: 1,
+  workspaceid: 'e222771f-3d78-4fc3-affe-3dcf59879f61',
+  isnew: true,
+  pos: { x: 0, y: 0 },
+  winsize: { width: 0, height: 0 },
+  lastfocusts: 0,
+  meta: null
+} (primary startup)
+2026-07-27 01:18:54.791 [service] workspace.GetWorkspace | 5ms
+2026-07-27 01:18:54.791 createBrowserWindow 49d2f415-1535-43e9-95ad-bd61a84c0934 e222771f-3d78-4fc3-affe-3dcf59879f61 {
+  oid: 'e222771f-3d78-4fc3-affe-3dcf59879f61',
+  version: 4,
+  name: 'Starter workspace',
+  icon: 'custom@wave-logo-solid',
+  color: '#58C142',
+  tabids: [ '19151dd5-f992-48c1-a601-2a675dcae7a7' ],
+  activetabid: '19151dd5-f992-48c1-a601-2a675dcae7a7',
+  meta: null
+}
+2026-07-27 01:18:54.791 create win 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:18:54.802 setActiveTab 19151dd5-f992-48c1-a601-2a675dcae7a7 49d2f415-1535-43e9-95ad-bd61a84c0934 e222771f-3d78-4fc3-affe-3dcf59879f61 false (primary startup)
+2026-07-27 01:18:54.807 getSpareTab: returning hotspare
+2026-07-27 01:18:54.807 initializing a new tab (primary startup)
+2026-07-27 01:18:54.810 [wavesrv] GetClientData
+2026-07-27 01:18:54.812 [service] client.GetClientData | 5ms
+2026-07-27 01:18:54.867 windows-updated 1 builder-active: false
+2026-07-27 01:18:55.318 ensureHotSpareTab
+2026-07-27 01:18:55.318 createBareTabView
+2026-07-27 01:18:55.600 fe-log Init Bare
+2026-07-27 01:18:55.701 tabview init 993ms
+2026-07-27 01:18:55.706 before wave ready, init tab, sending wave-init 19151dd5-f992-48c1-a601-2a675dcae7a7 (primary startup)
+2026-07-27 01:18:55.708 fe-log Init Wave {"tabId":"19151dd5-f992-48c1-a601-2a675dcae7a7","clientId":"a167a0b6-0937-40ad-b59e-ddebf82504a0","windowId":"49d2f415-1535-43e9-95ad-bd61a84c0934","activate":true,"primaryTabStartup":true}
+2026-07-27 01:18:55.712 [wavesrv] [websocket] new connection: connid:14650ac9-4c98-4cbd-91f7-73b4c8a583f9 stableid:tab:19151dd5-f992-48c1-a601-2a675dcae7a7
+2026-07-27 01:18:55.712 [wavesrv] wshrouter register link 6#[ws:tab:19151dd5-f992-48c1-a601-2a675dcae7a7]
+2026-07-27 01:18:55.712 [wavesrv] wshrouter trust link 6#[ws:tab:19151dd5-f992-48c1-a601-2a675dcae7a7] kind=router
+2026-07-27 01:18:55.712 [wavesrv] link recvloop start for 6#[ws:tab:19151dd5-f992-48c1-a601-2a675dcae7a7]
+2026-07-27 01:18:55.714 [wavesrv] wshrouter bind route "tab:19151dd5-f992-48c1-a601-2a675dcae7a7" to 6#[ws:tab:19151dd5-f992-48c1-a601-2a675dcae7a7]
+2026-07-27 01:18:55.949 wave-ready init time 243ms
+2026-07-27 01:18:55.950 designated quake window 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:18:55.950 show window 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:18:55.970 Configuring updater
+2026-07-27 01:18:55.972 Update check interval in milliseconds: 3600000
+2026-07-27 01:18:55.972 Update check enabled: true
+2026-07-27 01:18:55.973 Install update on quit: true
+2026-07-27 01:18:55.979 Updater config from binary: {
+  provider: 'generic',
+  url: 'https://dl.waveterm.dev/releases-w2',
+  updaterCacheDirName: 'waveterm-updater',
+  publisherName: [ 'Command Line Inc' ]
+}
+2026-07-27 01:18:55.979 Update channel setting does not exist, setting to value from updater config.
+2026-07-27 01:18:55.979 Update channel: latest
+2026-07-27 01:18:55.979 starting updater
+2026-07-27 01:18:55.980 checking-for-update
+2026-07-27 01:18:55.989 focus win 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:18:55.998 [wavesrv] FocusWindow 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:18:55.999 [wavesrv] client.WindowIds: [49d2f415-1535-43e9-95ad-bd61a84c0934]
+2026-07-27 01:18:56.003 [service] client.FocusWindow | 14ms
+2026-07-27 01:18:56.073 update-not-available
+2026-07-27 01:18:56.073 setMaxTabCacheSize 10
+2026-07-27 01:18:56.375 WaveObj updated window:49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:18:56.376 [service] window.SetWindowPosAndSize | 6ms
+2026-07-27 01:18:56.379 [service] object.GetObject window:49d2f415-1535-43e9-95ad-bd61a84c0934 | 4ms
+2026-07-27 01:18:56.380 WaveObj resolved window:49d2f415-1535-43e9-95ad-bd61a84c0934 5ms
+2026-07-27 01:18:56.676 fe-log Init Bare
+2026-07-27 01:18:56.765 tabview init 1446ms
+2026-07-27 01:18:57.746 [wavesrv] SetMetaCommand: tab:19151dd5-f992-48c1-a601-2a675dcae7a7 | map[waveai:panelopen:true]
+2026-07-27 01:18:57.775 [wavesrv] SetMetaCommand: client:a167a0b6-0937-40ad-b59e-ddebf82504a0 | map[onboarding:lastversion:v0.14.5]
+2026-07-27 01:18:57.820 [wavesrv] wshrouter bind route "feblock:ebd61c2d-d571-4327-bc68-ee85eaf6c3e9" to 6#[ws:tab:19151dd5-f992-48c1-a601-2a675dcae7a7]
+2026-07-27 01:18:57.902 [wavesrv] block "ebd61c2d-d571-4327-bc68-ee85eaf6c3e9" run() lock
+2026-07-27 01:18:57.938 [wavesrv] sending blockcontroller update &blockcontroller.BlockControllerRuntimeStatus{BlockId:"ebd61c2d-d571-4327-bc68-ee85eaf6c3e9", Version:1785125937938, ShellProcStatus:"running", ShellProcConnName:"", ShellProcExitCode:0, TsunamiPort:0}
+2026-07-27 01:18:57.938 [wavesrv] block "ebd61c2d-d571-4327-bc68-ee85eaf6c3e9" run() unlock
+2026-07-27 01:18:57.988 [wavesrv] Stat: wsh://local/~
+2026-07-27 01:18:57.988 [wavesrv] Stat: wsh://local/~
+2026-07-27 01:18:58.462 [wavesrv] ListEntriesStream: wsh://local/~
+2026-07-27 01:18:58.468 [wavesrv] got domain socket connection
+2026-07-27 01:18:58.468 [wavesrv] wshrouter register link 7#[domain]
+2026-07-27 01:18:58.468 [wavesrv] link recvloop start for 7#[domain]
+2026-07-27 01:18:58.468 [wavesrv] wshrouter control-msg route=$control link=7#[domain] command=authenticatetoken source=
+2026-07-27 01:18:58.469 [wavesrv] wshrouter authenticate-token success linkid=7 routeid="proc:0ff755c9-101b-4b82-b447-099777bb3294"
+2026-07-27 01:18:58.469 [wavesrv] wshrouter trust link 7#[domain] kind=leaf
+2026-07-27 01:18:58.469 [wavesrv] wshrouter bind route "proc:0ff755c9-101b-4b82-b447-099777bb3294" to 7#[domain]
+2026-07-27 01:18:58.470 [wavesrv] wshrouter unbind route "proc:0ff755c9-101b-4b82-b447-099777bb3294" from 7#[domain]
+2026-07-27 01:18:58.470 [wavesrv] link recvloop done for 7#[domain] (unknown)
+2026-07-27 01:18:58.471 [wavesrv] wshrouter unregister link 7#[domain]
+2026-07-27 01:18:58.645 [wavesrv] SetMetaCommand: block:5044b3c9-eecb-41e0-a447-0742e8bf2480 | map[url:https://github.com/wavetermdev/waveterm]
+2026-07-27 01:18:59.212 [wavesrv] SetMetaCommand: block:5044b3c9-eecb-41e0-a447-0742e8bf2480 | map[url:https://github.com/wavetermdev/waveterm]
+2026-07-27 01:18:59.276 [wavesrv] SetMetaCommand: block:5044b3c9-eecb-41e0-a447-0742e8bf2480 | map[url:https://github.com/wavetermdev/waveterm]
+2026-07-27 01:18:59.368 [wavesrv] SetMetaCommand: block:5044b3c9-eecb-41e0-a447-0742e8bf2480 | map[url:https://github.com/wavetermdev/waveterm]
+2026-07-27 01:18:59.498 [wavesrv] filestore flush: 1/1 entries flushed, err:<nil>
+2026-07-27 01:19:01.776 win 'close' handler fired 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:19:01.789 win 'closed' handler fired 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:19:01.789 destroy tab 19151dd5-f992-48c1-a601-2a675dcae7a7
+2026-07-27 01:19:01.790 stopping updater
+2026-07-27 01:22:00.409 waveterm-app starting, data_dir=C:\Users\arthu\workspaces\config\data\waveterm, config_dir=C:\Users\arthu\workspaces\config\waveterm electronpath=C:\Users\arthu\AppData\Local\Programs\waveterm\resources\app.asar\dist gopath=C:\Users\arthu\AppData\Local\Programs\waveterm\resources\app.asar.unpacked\dist arch=win32/x64 electron=41.1.0
+2026-07-27 01:22:00.412 trying to run local server C:\Users\arthu\AppData\Local\Programs\waveterm\resources\app.asar.unpacked\dist\bin\wavesrv.x64.exe
+2026-07-27 01:22:00.424 spawned wavesrv
+2026-07-27 01:22:00.459 [wavesrv] wshrouter register link 1#[control]
+2026-07-27 01:22:00.459 [wavesrv] wshrouter trust link 1#[control] kind=leaf
+2026-07-27 01:22:00.459 [wavesrv] wshrouter registered control route "$control" linkid=1
+2026-07-27 01:22:00.460 [wavesrv] link recvloop start for 1#[control]
+2026-07-27 01:22:00.460 [wavesrv] wshrouter registered control:root route linkid=1
+2026-07-27 01:22:00.460 [wavesrv] [base] acquiring lock on C:\Users\arthu\workspaces\config\data\waveterm\wave.lock
+2026-07-27 01:22:00.460 [wavesrv] wave version: 0.14.5 (202604161539)
+2026-07-27 01:22:00.460 [wavesrv] wave data dir: C:\Users\arthu\workspaces\config\data\waveterm
+2026-07-27 01:22:00.460 [wavesrv] wave config dir: C:\Users\arthu\workspaces\config\waveterm
+2026-07-27 01:22:00.460 [wavesrv] [db] opening db C:\Users\arthu\workspaces\config\data\waveterm\db\filestore.db
+2026-07-27 01:22:00.460 [wavesrv] migrate filestore
+2026-07-27 01:22:00.460 [wavesrv] filestore initialized
+2026-07-27 01:22:00.460 [wavesrv] migrate wstore
+2026-07-27 01:22:00.460 [wavesrv] wstore initialized
+2026-07-27 01:22:00.460 [wavesrv] initializing wsh and shell startup files
+2026-07-27 01:22:00.460 [wavesrv] clientid: a167a0b6-0937-40ad-b59e-ddebf82504a0
+2026-07-27 01:22:00.460 [wavesrv] client has one window
+2026-07-27 01:22:00.460 [wavesrv] CheckAndFixWindow 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:22:00.460 [wavesrv] JWT Public Key:
+2026-07-27 01:22:00.460 -----BEGIN PUBLIC KEY-----
+2026-07-27 01:22:00.460 MCowBQYDK2VwAyEAmjYHCUeZterCqiI7ePSRpQfVwaqW+X1XXn52t5wmTD0=
+2026-07-27 01:22:00.460 -----END PUBLIC KEY-----
+2026-07-27 01:22:00.460 [wavesrv] wshrouter register link 2#[main-client]
+2026-07-27 01:22:00.460 [wavesrv] wshrouter trust link 2#[main-client] kind=leaf
+2026-07-27 01:22:00.460 [wavesrv] wshrouter bind route "wavesrv" to 2#[main-client]
+2026-07-27 01:22:00.460 [wavesrv] link recvloop start for 2#[main-client]
+2026-07-27 01:22:00.461 [wavesrv] wshrouter register link 3#[bare-client]
+2026-07-27 01:22:00.461 [wavesrv] wshrouter trust link 3#[bare-client] kind=leaf
+2026-07-27 01:22:00.461 [wavesrv] wshrouter bind route "bare:fbc35bf3-67f1-41a7-a1c7-0ab6696c36d7" to 3#[bare-client]
+2026-07-27 01:22:00.461 [wavesrv] link recvloop start for 3#[bare-client]
+2026-07-27 01:22:00.461 [wavesrv] wshrouter register link 4#[conn:local]
+2026-07-27 01:22:00.461 [wavesrv] wshrouter trust link 4#[conn:local] kind=leaf
+2026-07-27 01:22:00.461 [wavesrv] wshrouter bind route "conn:local" to 4#[conn:local]
+2026-07-27 01:22:00.461 [wavesrv] link recvloop start for 4#[conn:local]
+2026-07-27 01:22:00.461 [wavesrv] create config watcher, configdir="C:\\Users\\arthu\\workspaces\\config\\waveterm"
+2026-07-27 01:22:00.461 [wavesrv] subdirs: [C:\Users\arthu\workspaces\config\waveterm\mimetypes C:\Users\arthu\workspaces\config\waveterm\defaultwidgets C:\Users\arthu\workspaces\config\waveterm\widgets C:\Users\arthu\workspaces\config\waveterm\presets C:\Users\arthu\workspaces\config\waveterm\backgrounds C:\Users\arthu\workspaces\config\waveterm\termthemes C:\Users\arthu\workspaces\config\waveterm\connections C:\Users\arthu\workspaces\config\waveterm\bookmarks C:\Users\arthu\workspaces\config\waveterm\waveai]
+2026-07-27 01:22:00.461 [wavesrv] starting file watcher
+2026-07-27 01:22:00.471 [wavesrv] AI mode config watcher initialized
+2026-07-27 01:22:00.471 [wavesrv] initializing badge store
+2026-07-27 01:22:00.472 [wavesrv] Server [web] listening on 127.0.0.1:63592
+2026-07-27 01:22:00.472 [wavesrv] Server [websocket] listening on 127.0.0.1:63593
+2026-07-27 01:22:00.472 [wavesrv] [websocket] running websocket server on 127.0.0.1:63593
+2026-07-27 01:22:00.472 [wavesrv] Server [unix-domain] listening on C:\Users\arthu\workspaces\config\data\waveterm\wave.sock
+2026-07-27 01:22:00.472 [wavesrv] Schema is nil, initializing
+2026-07-27 01:22:00.472 [wavesrv] Found static site at C:\Users\arthu\AppData\Local\Programs\waveterm\resources\app.asar.unpacked\dist\schema, serving
+2026-07-27 01:22:00.473 wavesrv ready signal received true 62 ms
+2026-07-27 01:22:00.485 [wavesrv] wsh binary successfully copied from "wsh-0.14.5-windows.x64.exe" to "C:\\Users\\arthu\\workspaces\\config\\data\\waveterm\\bin\\wsh.exe"
+2026-07-27 01:22:00.507 [wavesrv] [websocket] new connection: connid:e2d47db6-bb33-4137-8a6e-2999e03e1aa1 stableid:electron
+2026-07-27 01:22:00.508 [wavesrv] wshrouter register link 5#[ws:electron]
+2026-07-27 01:22:00.508 [wavesrv] wshrouter trust link 5#[ws:electron] kind=router
+2026-07-27 01:22:00.508 [wavesrv] link recvloop start for 5#[ws:electron]
+2026-07-27 01:22:00.508 [wavesrv] wshrouter bind route "electron" to 5#[ws:electron]
+2026-07-27 01:22:00.620 ensureHotSpareTab
+2026-07-27 01:22:00.620 createBareTabView
+2026-07-27 01:22:00.635 relaunchBrowserWindows
+2026-07-27 01:22:00.707 [wavesrv] GetClientData
+2026-07-27 01:22:00.711 [service] client.GetClientData | 76ms
+2026-07-27 01:22:00.717 [service] window.GetWindow | 4ms
+2026-07-27 01:22:00.718 relaunch -- creating window 49d2f415-1535-43e9-95ad-bd61a84c0934 {
+  oid: '49d2f415-1535-43e9-95ad-bd61a84c0934',
+  version: 2,
+  workspaceid: 'e222771f-3d78-4fc3-affe-3dcf59879f61',
+  pos: { x: 0, y: 0 },
+  winsize: { width: 1180, height: 572 },
+  lastfocusts: 0,
+  meta: null
+} (primary startup)
+2026-07-27 01:22:00.722 [service] workspace.GetWorkspace | 4ms
+2026-07-27 01:22:00.723 createBrowserWindow 49d2f415-1535-43e9-95ad-bd61a84c0934 e222771f-3d78-4fc3-affe-3dcf59879f61 {
+  oid: 'e222771f-3d78-4fc3-affe-3dcf59879f61',
+  version: 4,
+  name: 'Starter workspace',
+  icon: 'custom@wave-logo-solid',
+  color: '#58C142',
+  tabids: [ '19151dd5-f992-48c1-a601-2a675dcae7a7' ],
+  activetabid: '19151dd5-f992-48c1-a601-2a675dcae7a7',
+  meta: null
+}
+2026-07-27 01:22:00.723 create win 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:22:00.734 setActiveTab 19151dd5-f992-48c1-a601-2a675dcae7a7 49d2f415-1535-43e9-95ad-bd61a84c0934 e222771f-3d78-4fc3-affe-3dcf59879f61 false (primary startup)
+2026-07-27 01:22:00.739 getSpareTab: returning hotspare
+2026-07-27 01:22:00.739 initializing a new tab (primary startup)
+2026-07-27 01:22:00.745 [wavesrv] GetClientData
+2026-07-27 01:22:00.747 [service] client.GetClientData | 8ms
+2026-07-27 01:22:00.788 windows-updated 1 builder-active: false
+2026-07-27 01:22:01.239 ensureHotSpareTab
+2026-07-27 01:22:01.239 createBareTabView
+2026-07-27 01:22:01.483 fe-log Init Bare
+2026-07-27 01:22:01.590 tabview init 960ms
+2026-07-27 01:22:01.595 before wave ready, init tab, sending wave-init 19151dd5-f992-48c1-a601-2a675dcae7a7 (primary startup)
+2026-07-27 01:22:01.596 fe-log Init Wave {"tabId":"19151dd5-f992-48c1-a601-2a675dcae7a7","clientId":"a167a0b6-0937-40ad-b59e-ddebf82504a0","windowId":"49d2f415-1535-43e9-95ad-bd61a84c0934","activate":true,"primaryTabStartup":true}
+2026-07-27 01:22:01.601 [wavesrv] [websocket] new connection: connid:32865368-d2c3-44f0-bc7b-195dd6c8450c stableid:tab:19151dd5-f992-48c1-a601-2a675dcae7a7
+2026-07-27 01:22:01.601 [wavesrv] wshrouter register link 6#[ws:tab:19151dd5-f992-48c1-a601-2a675dcae7a7]
+2026-07-27 01:22:01.601 [wavesrv] wshrouter trust link 6#[ws:tab:19151dd5-f992-48c1-a601-2a675dcae7a7] kind=router
+2026-07-27 01:22:01.601 [wavesrv] link recvloop start for 6#[ws:tab:19151dd5-f992-48c1-a601-2a675dcae7a7]
+2026-07-27 01:22:01.603 [wavesrv] wshrouter bind route "tab:19151dd5-f992-48c1-a601-2a675dcae7a7" to 6#[ws:tab:19151dd5-f992-48c1-a601-2a675dcae7a7]
+2026-07-27 01:22:01.754 wave-ready init time 159ms
+2026-07-27 01:22:01.754 designated quake window 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:22:01.754 show window 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:22:01.771 Configuring updater
+2026-07-27 01:22:01.773 focus win 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:22:01.779 Update check interval in milliseconds: 3600000
+2026-07-27 01:22:01.779 Update check enabled: true
+2026-07-27 01:22:01.779 Install update on quit: true
+2026-07-27 01:22:01.785 Updater config from binary: {
+  provider: 'generic',
+  url: 'https://dl.waveterm.dev/releases-w2',
+  updaterCacheDirName: 'waveterm-updater',
+  publisherName: [ 'Command Line Inc' ]
+}
+2026-07-27 01:22:01.785 Update channel: latest
+2026-07-27 01:22:01.785 starting updater
+2026-07-27 01:22:01.786 checking-for-update
+2026-07-27 01:22:01.796 [wavesrv] FocusWindow 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:22:01.797 [wavesrv] client.WindowIds: [49d2f415-1535-43e9-95ad-bd61a84c0934]
+2026-07-27 01:22:01.804 [service] client.FocusWindow | 31ms
+2026-07-27 01:22:01.812 [wavesrv] wshrouter bind route "feblock:ebd61c2d-d571-4327-bc68-ee85eaf6c3e9" to 6#[ws:tab:19151dd5-f992-48c1-a601-2a675dcae7a7]
+2026-07-27 01:22:02.009 [wavesrv] block "ebd61c2d-d571-4327-bc68-ee85eaf6c3e9" run() lock
+2026-07-27 01:22:02.049 fe-log Init Bare
+2026-07-27 01:22:02.054 [wavesrv] sending blockcontroller update &blockcontroller.BlockControllerRuntimeStatus{BlockId:"ebd61c2d-d571-4327-bc68-ee85eaf6c3e9", Version:1785126122054, ShellProcStatus:"running", ShellProcConnName:"", ShellProcExitCode:0, TsunamiPort:0}
+2026-07-27 01:22:02.054 [wavesrv] block "ebd61c2d-d571-4327-bc68-ee85eaf6c3e9" run() unlock
+2026-07-27 01:22:02.123 [wavesrv] Stat: wsh://local/~
+2026-07-27 01:22:02.186 tabview init 945ms
+2026-07-27 01:22:02.190 WaveObj updated window:49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:22:02.191 [service] window.SetWindowPosAndSize | 9ms
+2026-07-27 01:22:02.195 [service] object.GetObject window:49d2f415-1535-43e9-95ad-bd61a84c0934 | 6ms
+2026-07-27 01:22:02.195 WaveObj resolved window:49d2f415-1535-43e9-95ad-bd61a84c0934 6ms
+2026-07-27 01:22:02.203 [wavesrv] SetMetaCommand: tab:19151dd5-f992-48c1-a601-2a675dcae7a7 | map[waveai:panelwidth:389]
+2026-07-27 01:22:02.257 [wavesrv] ListEntriesStream: wsh://local/~
+2026-07-27 01:22:02.424 update-not-available
+2026-07-27 01:22:02.424 setMaxTabCacheSize 10
+2026-07-27 01:22:02.735 [wavesrv] got domain socket connection
+2026-07-27 01:22:02.735 [wavesrv] wshrouter register link 7#[domain]
+2026-07-27 01:22:02.735 [wavesrv] link recvloop start for 7#[domain]
+2026-07-27 01:22:02.735 [wavesrv] wshrouter control-msg route=$control link=7#[domain] command=authenticatetoken source=
+2026-07-27 01:22:02.735 [wavesrv] wshrouter authenticate-token success linkid=7 routeid="proc:2fa58910-2aa3-44c6-88e9-6f9ddfe138d9"
+2026-07-27 01:22:02.735 [wavesrv] wshrouter trust link 7#[domain] kind=leaf
+2026-07-27 01:22:02.735 [wavesrv] wshrouter bind route "proc:2fa58910-2aa3-44c6-88e9-6f9ddfe138d9" to 7#[domain]
+2026-07-27 01:22:02.735 [wavesrv] wshrouter unbind route "proc:2fa58910-2aa3-44c6-88e9-6f9ddfe138d9" from 7#[domain]
+2026-07-27 01:22:02.735 [wavesrv] wshrouter unregister link 7#[domain]
+2026-07-27 01:22:02.735 [wavesrv] link recvloop done for 7#[domain] (unknown)
+2026-07-27 01:22:02.746 [wavesrv] SetMetaCommand: block:5044b3c9-eecb-41e0-a447-0742e8bf2480 | map[url:https://github.com/wavetermdev/waveterm]
+2026-07-27 01:22:03.176 [wavesrv] SetMetaCommand: block:5044b3c9-eecb-41e0-a447-0742e8bf2480 | map[url:https://github.com/wavetermdev/waveterm]
+2026-07-27 01:22:03.183 [wavesrv] SetMetaCommand: block:5044b3c9-eecb-41e0-a447-0742e8bf2480 | map[url:https://github.com/wavetermdev/waveterm]
+2026-07-27 01:22:03.263 [wavesrv] SetMetaCommand: block:5044b3c9-eecb-41e0-a447-0742e8bf2480 | map[url:https://github.com/wavetermdev/waveterm]
+2026-07-27 01:22:04.403 WaveObj updated window:49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:22:04.403 [service] window.SetWindowPosAndSize | 4ms
+2026-07-27 01:22:05.450 [wavesrv] filestore flush: 1/1 entries flushed, err:<nil>
+2026-07-27 01:22:09.440 [wavesrv] SetMetaCommand: block:df062fbf-e7ec-4cbf-8152-55aa41edeabd | map[graph:metrics:[cpu mem:used] sysinfo:type:CPU + Mem]
+2026-07-27 01:22:10.461 [wavesrv] [wcloud] sending request POST https://api.waveterm.dev/central/tevents
+2026-07-27 01:22:10.719 [wavesrv] DeleteBlock: parentBlockCount: 3
+2026-07-27 01:22:11.327 [wavesrv] [wcloud] sent 3 tevents (latency: 865.9852ms)
+2026-07-27 01:22:11.795 [wavesrv] DeleteBlock: parentBlockCount: 2
+2026-07-27 01:22:17.077 [wavesrv] SetMetaCommand: tab:19151dd5-f992-48c1-a601-2a675dcae7a7 | map[waveai:panelopen:false]
+2026-07-27 01:22:20.205 switch-workspace e222771f-3d78-4fc3-affe-3dcf59879f61 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:22:20.205 switchWorkspace e222771f-3d78-4fc3-affe-3dcf59879f61 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:22:20.205 switchWorkspace already on this workspace 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:22:20.451 [wavesrv] filestore flush: 1/1 entries flushed, err:<nil>
+2026-07-27 01:22:40.452 [wavesrv] filestore flush: 1/1 entries flushed, err:<nil>
+2026-07-27 01:22:45.452 [wavesrv] filestore flush: 1/1 entries flushed, err:<nil>
+2026-07-27 01:22:50.453 [wavesrv] filestore flush: 1/1 entries flushed, err:<nil>
+2026-07-27 01:22:55.453 [wavesrv] filestore flush: 1/1 entries flushed, err:<nil>
+2026-07-27 01:23:36.345 focus win 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:23:36.356 [wavesrv] FocusWindow 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:23:36.357 [wavesrv] client.WindowIds: [49d2f415-1535-43e9-95ad-bd61a84c0934]
+2026-07-27 01:23:36.359 [service] client.FocusWindow | 13ms
+2026-07-27 01:29:02.967 focus win 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:29:02.976 [wavesrv] FocusWindow 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:29:02.976 [wavesrv] client.WindowIds: [49d2f415-1535-43e9-95ad-bd61a84c0934]
+2026-07-27 01:29:02.978 [service] client.FocusWindow | 11ms
+2026-07-27 01:29:05.564 [wavesrv] DeleteBlock: parentBlockCount: 1
+2026-07-27 01:29:05.568 [wavesrv] wshrouter unbind route "feblock:ebd61c2d-d571-4327-bc68-ee85eaf6c3e9" from 6#[ws:tab:19151dd5-f992-48c1-a601-2a675dcae7a7]
+2026-07-27 01:29:05.570 [wavesrv] wshrouter unbind route "feblock:ebd61c2d-d571-4327-bc68-ee85eaf6c3e9" from 6#[ws:tab:19151dd5-f992-48c1-a601-2a675dcae7a7]
+2026-07-27 01:29:05.579 [wavesrv] sending blockcontroller update blockcontroller.BlockControllerRuntimeStatus{BlockId:"ebd61c2d-d571-4327-bc68-ee85eaf6c3e9", Version:1785126545579, ShellProcStatus:"done", ShellProcConnName:"", ShellProcExitCode:0, TsunamiPort:0}
+2026-07-27 01:29:05.579 [wavesrv] error reading from shell: read |0: file already closed
+2026-07-27 01:29:05.579 [wavesrv] [shellproc] pty-read loop done
+2026-07-27 01:29:05.580 [wavesrv] error writing muted message to terminal (blockid=ebd61c2d-d571-4327-bc68-ee85eaf6c3e9): error appending to blockfile: file does not exist
+2026-07-27 01:29:05.580 [wavesrv] sending blockcontroller update &blockcontroller.BlockControllerRuntimeStatus{BlockId:"ebd61c2d-d571-4327-bc68-ee85eaf6c3e9", Version:1785126545580, ShellProcStatus:"done", ShellProcConnName:"", ShellProcExitCode:1, TsunamiPort:0}
+2026-07-27 01:29:05.580 [wavesrv] [shellproc] shell process wait loop done
+2026-07-27 01:29:05.580 [wavesrv] error getting block data: not found
+2026-07-27 01:29:06.716 [wavesrv] wshrouter bind route "feblock:e3914965-8cc5-44c3-9de3-b497c8b1d42c" to 6#[ws:tab:19151dd5-f992-48c1-a601-2a675dcae7a7]
+2026-07-27 01:29:06.756 [wavesrv] block "e3914965-8cc5-44c3-9de3-b497c8b1d42c" run() lock
+2026-07-27 01:29:06.783 [wavesrv] sending blockcontroller update &blockcontroller.BlockControllerRuntimeStatus{BlockId:"e3914965-8cc5-44c3-9de3-b497c8b1d42c", Version:1785126546783, ShellProcStatus:"running", ShellProcConnName:"", ShellProcExitCode:0, TsunamiPort:0}
+2026-07-27 01:29:06.783 [wavesrv] block "e3914965-8cc5-44c3-9de3-b497c8b1d42c" run() unlock
+2026-07-27 01:29:07.185 [wavesrv] got domain socket connection
+2026-07-27 01:29:07.185 [wavesrv] wshrouter register link 8#[domain]
+2026-07-27 01:29:07.185 [wavesrv] link recvloop start for 8#[domain]
+2026-07-27 01:29:07.186 [wavesrv] wshrouter control-msg route=$control link=8#[domain] command=authenticatetoken source=
+2026-07-27 01:29:07.186 [wavesrv] wshrouter authenticate-token success linkid=8 routeid="proc:78167a4f-b5b2-4e62-ad2e-e87b2d9c3722"
+2026-07-27 01:29:07.186 [wavesrv] wshrouter trust link 8#[domain] kind=leaf
+2026-07-27 01:29:07.186 [wavesrv] wshrouter bind route "proc:78167a4f-b5b2-4e62-ad2e-e87b2d9c3722" to 8#[domain]
+2026-07-27 01:29:07.188 [wavesrv] wshrouter unbind route "proc:78167a4f-b5b2-4e62-ad2e-e87b2d9c3722" from 8#[domain]
+2026-07-27 01:29:07.188 [wavesrv] link recvloop done for 8#[domain] (unknown)
+2026-07-27 01:29:07.188 [wavesrv] wshrouter unregister link 8#[domain]
+2026-07-27 01:29:10.481 [wavesrv] filestore flush: 1/1 entries flushed, err:<nil>
+2026-07-27 01:29:53.442 focus win 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:29:53.468 [wavesrv] FocusWindow 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:29:53.469 [wavesrv] client.WindowIds: [49d2f415-1535-43e9-95ad-bd61a84c0934]
+2026-07-27 01:29:53.471 [service] client.FocusWindow | 29ms
+2026-07-27 01:29:56.819 [wavesrv] DeleteBlock: parentBlockCount: 1
+2026-07-27 01:29:56.826 [wavesrv] wshrouter unbind route "feblock:e3914965-8cc5-44c3-9de3-b497c8b1d42c" from 6#[ws:tab:19151dd5-f992-48c1-a601-2a675dcae7a7]
+2026-07-27 01:29:56.829 [wavesrv] wshrouter unbind route "feblock:e3914965-8cc5-44c3-9de3-b497c8b1d42c" from 6#[ws:tab:19151dd5-f992-48c1-a601-2a675dcae7a7]
+2026-07-27 01:29:56.864 [wavesrv] error writing muted message to terminal (blockid=e3914965-8cc5-44c3-9de3-b497c8b1d42c): error appending to blockfile: file does not exist
+2026-07-27 01:29:56.864 [wavesrv] sending blockcontroller update &blockcontroller.BlockControllerRuntimeStatus{BlockId:"e3914965-8cc5-44c3-9de3-b497c8b1d42c", Version:1785126596863, ShellProcStatus:"done", ShellProcConnName:"", ShellProcExitCode:1, TsunamiPort:0}
+2026-07-27 01:29:56.864 [wavesrv] [shellproc] shell process wait loop done
+2026-07-27 01:29:56.865 [wavesrv] error getting block data: not found
+2026-07-27 01:29:56.865 [wavesrv] sending blockcontroller update blockcontroller.BlockControllerRuntimeStatus{BlockId:"e3914965-8cc5-44c3-9de3-b497c8b1d42c", Version:1785126596864, ShellProcStatus:"done", ShellProcConnName:"", ShellProcExitCode:1, TsunamiPort:0}
+2026-07-27 01:29:56.878 [wavesrv] error reading from shell: read |0: file already closed
+2026-07-27 01:29:56.878 [wavesrv] [shellproc] pty-read loop done
+2026-07-27 01:29:57.486 [wavesrv] wshrouter bind route "feblock:9ca551ee-f1a3-4b79-9c85-2451108d34e7" to 6#[ws:tab:19151dd5-f992-48c1-a601-2a675dcae7a7]
+2026-07-27 01:29:57.552 [wavesrv] block "9ca551ee-f1a3-4b79-9c85-2451108d34e7" run() lock
+2026-07-27 01:29:57.598 [wavesrv] sending blockcontroller update &blockcontroller.BlockControllerRuntimeStatus{BlockId:"9ca551ee-f1a3-4b79-9c85-2451108d34e7", Version:1785126597597, ShellProcStatus:"running", ShellProcConnName:"", ShellProcExitCode:0, TsunamiPort:0}
+2026-07-27 01:29:57.598 [wavesrv] block "9ca551ee-f1a3-4b79-9c85-2451108d34e7" run() unlock
+2026-07-27 01:29:58.681 [wavesrv] got domain socket connection
+2026-07-27 01:29:58.681 [wavesrv] wshrouter register link 9#[domain]
+2026-07-27 01:29:58.681 [wavesrv] link recvloop start for 9#[domain]
+2026-07-27 01:29:58.682 [wavesrv] wshrouter control-msg route=$control link=9#[domain] command=authenticatetoken source=
+2026-07-27 01:29:58.682 [wavesrv] wshrouter authenticate-token success linkid=9 routeid="proc:48ad0313-ee8f-4fb8-87f4-348b9c21a7be"
+2026-07-27 01:29:58.682 [wavesrv] wshrouter trust link 9#[domain] kind=leaf
+2026-07-27 01:29:58.682 [wavesrv] wshrouter bind route "proc:48ad0313-ee8f-4fb8-87f4-348b9c21a7be" to 9#[domain]
+2026-07-27 01:29:58.695 [wavesrv] wshrouter unbind route "proc:48ad0313-ee8f-4fb8-87f4-348b9c21a7be" from 9#[domain]
+2026-07-27 01:29:58.695 [wavesrv] wshrouter unregister link 9#[domain]
+2026-07-27 01:29:58.695 [wavesrv] link recvloop done for 9#[domain] (unknown)
+2026-07-27 01:30:00.489 [wavesrv] filestore flush: 1/1 entries flushed, err:<nil>
+2026-07-27 01:30:05.490 [wavesrv] filestore flush: 1/1 entries flushed, err:<nil>
+2026-07-27 01:32:59.506 focus win 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:32:59.516 [wavesrv] FocusWindow 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:32:59.517 [wavesrv] client.WindowIds: [49d2f415-1535-43e9-95ad-bd61a84c0934]
+2026-07-27 01:32:59.518 [service] client.FocusWindow | 11ms
+2026-07-27 01:33:01.909 [wavesrv] DeleteBlock: parentBlockCount: 1
+2026-07-27 01:33:01.911 [wavesrv] wshrouter unbind route "feblock:9ca551ee-f1a3-4b79-9c85-2451108d34e7" from 6#[ws:tab:19151dd5-f992-48c1-a601-2a675dcae7a7]
+2026-07-27 01:33:01.913 [wavesrv] wshrouter unbind route "feblock:9ca551ee-f1a3-4b79-9c85-2451108d34e7" from 6#[ws:tab:19151dd5-f992-48c1-a601-2a675dcae7a7]
+2026-07-27 01:33:01.924 [wavesrv] error reading from shell: read |0: file already closed
+2026-07-27 01:33:01.924 [wavesrv] [shellproc] pty-read loop done
+2026-07-27 01:33:01.924 [wavesrv] sending blockcontroller update blockcontroller.BlockControllerRuntimeStatus{BlockId:"9ca551ee-f1a3-4b79-9c85-2451108d34e7", Version:1785126781922, ShellProcStatus:"done", ShellProcConnName:"", ShellProcExitCode:0, TsunamiPort:0}
+2026-07-27 01:33:01.924 [wavesrv] error writing muted message to terminal (blockid=9ca551ee-f1a3-4b79-9c85-2451108d34e7): error appending to blockfile: file does not exist
+2026-07-27 01:33:01.924 [wavesrv] sending blockcontroller update &blockcontroller.BlockControllerRuntimeStatus{BlockId:"9ca551ee-f1a3-4b79-9c85-2451108d34e7", Version:1785126781923, ShellProcStatus:"done", ShellProcConnName:"", ShellProcExitCode:1, TsunamiPort:0}
+2026-07-27 01:33:01.924 [wavesrv] [shellproc] shell process wait loop done
+2026-07-27 01:33:01.924 [wavesrv] error getting block data: not found
+2026-07-27 01:33:03.464 [wavesrv] wshrouter bind route "feblock:f1e2df79-d6e9-4faf-8d4d-668033c92186" to 6#[ws:tab:19151dd5-f992-48c1-a601-2a675dcae7a7]
+2026-07-27 01:33:03.502 [wavesrv] block "f1e2df79-d6e9-4faf-8d4d-668033c92186" run() lock
+2026-07-27 01:33:03.528 [wavesrv] sending blockcontroller update &blockcontroller.BlockControllerRuntimeStatus{BlockId:"f1e2df79-d6e9-4faf-8d4d-668033c92186", Version:1785126783528, ShellProcStatus:"running", ShellProcConnName:"", ShellProcExitCode:0, TsunamiPort:0}
+2026-07-27 01:33:03.528 [wavesrv] block "f1e2df79-d6e9-4faf-8d4d-668033c92186" run() unlock
+2026-07-27 01:33:03.952 [wavesrv] got domain socket connection
+2026-07-27 01:33:03.952 [wavesrv] wshrouter register link 10#[domain]
+2026-07-27 01:33:03.952 [wavesrv] link recvloop start for 10#[domain]
+2026-07-27 01:33:03.952 [wavesrv] wshrouter control-msg route=$control link=10#[domain] command=authenticatetoken source=
+2026-07-27 01:33:03.952 [wavesrv] wshrouter authenticate-token success linkid=10 routeid="proc:41af9a73-1d14-480b-ab0f-d7cec6633f45"
+2026-07-27 01:33:03.952 [wavesrv] wshrouter trust link 10#[domain] kind=leaf
+2026-07-27 01:33:03.952 [wavesrv] wshrouter bind route "proc:41af9a73-1d14-480b-ab0f-d7cec6633f45" to 10#[domain]
+2026-07-27 01:33:03.953 [wavesrv] wshrouter unbind route "proc:41af9a73-1d14-480b-ab0f-d7cec6633f45" from 10#[domain]
+2026-07-27 01:33:03.954 [wavesrv] link recvloop done for 10#[domain] (unknown)
+2026-07-27 01:33:03.954 [wavesrv] wshrouter unregister link 10#[domain]
+2026-07-27 01:33:05.497 [wavesrv] filestore flush: 1/1 entries flushed, err:<nil>
+2026-07-27 01:33:10.498 [wavesrv] filestore flush: 1/1 entries flushed, err:<nil>
+2026-07-27 01:34:00.364 focus win 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:34:00.374 [wavesrv] FocusWindow 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:34:00.375 [wavesrv] client.WindowIds: [49d2f415-1535-43e9-95ad-bd61a84c0934]
+2026-07-27 01:34:00.377 [service] client.FocusWindow | 13ms
+2026-07-27 01:34:03.693 [wavesrv] Stat: C:\Users\arthu\workspaces\config\waveterm/presets.json
+2026-07-27 01:34:03.693 [wavesrv] Read: C:\Users\arthu\workspaces\config\waveterm/widgets.json
+2026-07-27 01:34:03.708 [wavesrv] SetMetaCommand: block:ace0cbf1-5aa2-4168-84ee-2d7d774a6f80 | map[file:widgets.json]
+2026-07-27 01:35:50.709 focus win 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:35:50.720 [wavesrv] FocusWindow 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:35:50.723 [wavesrv] client.WindowIds: [49d2f415-1535-43e9-95ad-bd61a84c0934]
+2026-07-27 01:35:50.726 [service] client.FocusWindow | 16ms
+2026-07-27 01:37:06.488 focus win 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:37:06.498 [wavesrv] FocusWindow 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:37:06.498 [wavesrv] client.WindowIds: [49d2f415-1535-43e9-95ad-bd61a84c0934]
+2026-07-27 01:37:06.500 [service] client.FocusWindow | 11ms
+2026-07-27 01:37:22.265 [wavesrv] PutFile: C:\Users\arthu\workspaces\config\waveterm/widgets.json
+2026-07-27 01:37:28.180 [wavesrv] wshrouter bind route "feblock:d70941fd-e067-4f8f-9b9c-8660ef97d287" to 6#[ws:tab:19151dd5-f992-48c1-a601-2a675dcae7a7]
+2026-07-27 01:37:28.211 [wavesrv] block "d70941fd-e067-4f8f-9b9c-8660ef97d287" run() lock
+2026-07-27 01:37:28.358 [wavesrv] sending blockcontroller update &blockcontroller.BlockControllerRuntimeStatus{BlockId:"d70941fd-e067-4f8f-9b9c-8660ef97d287", Version:1785127048256, ShellProcStatus:"running", ShellProcConnName:"", ShellProcExitCode:0, TsunamiPort:0}
+2026-07-27 01:37:28.358 [wavesrv] block "d70941fd-e067-4f8f-9b9c-8660ef97d287" run() unlock
+2026-07-27 01:37:28.667 [wavesrv] got domain socket connection
+2026-07-27 01:37:28.667 [wavesrv] wshrouter register link 11#[domain]
+2026-07-27 01:37:28.667 [wavesrv] link recvloop start for 11#[domain]
+2026-07-27 01:37:28.668 [wavesrv] wshrouter control-msg route=$control link=11#[domain] command=authenticatetoken source=
+2026-07-27 01:37:28.668 [wavesrv] wshrouter authenticate-token success linkid=11 routeid="proc:ecd886bd-9f2a-490f-ae32-49c06a72949e"
+2026-07-27 01:37:28.668 [wavesrv] wshrouter trust link 11#[domain] kind=leaf
+2026-07-27 01:37:28.668 [wavesrv] wshrouter bind route "proc:ecd886bd-9f2a-490f-ae32-49c06a72949e" to 11#[domain]
+2026-07-27 01:37:28.669 [wavesrv] wshrouter unbind route "proc:ecd886bd-9f2a-490f-ae32-49c06a72949e" from 11#[domain]
+2026-07-27 01:37:28.669 [wavesrv] link recvloop done for 11#[domain] (unknown)
+2026-07-27 01:37:28.669 [wavesrv] wshrouter unregister link 11#[domain]
+2026-07-27 01:37:30.461 [wavesrv] DeleteBlock: parentBlockCount: 3
+2026-07-27 01:37:30.508 [wavesrv] filestore flush: 2/2 entries flushed, err:<nil>
+2026-07-27 01:37:33.152 [wavesrv] DeleteBlock: parentBlockCount: 2
+2026-07-27 01:37:33.154 [wavesrv] wshrouter unbind route "feblock:f1e2df79-d6e9-4faf-8d4d-668033c92186" from 6#[ws:tab:19151dd5-f992-48c1-a601-2a675dcae7a7]
+2026-07-27 01:37:33.156 [wavesrv] wshrouter unbind route "feblock:f1e2df79-d6e9-4faf-8d4d-668033c92186" from 6#[ws:tab:19151dd5-f992-48c1-a601-2a675dcae7a7]
+2026-07-27 01:37:33.165 [wavesrv] error reading from shell: read |0: file already closed
+2026-07-27 01:37:33.166 [wavesrv] [shellproc] pty-read loop done
+2026-07-27 01:37:33.166 [wavesrv] sending blockcontroller update blockcontroller.BlockControllerRuntimeStatus{BlockId:"f1e2df79-d6e9-4faf-8d4d-668033c92186", Version:1785127053166, ShellProcStatus:"done", ShellProcConnName:"", ShellProcExitCode:0, TsunamiPort:0}
+2026-07-27 01:37:33.166 [wavesrv] error writing muted message to terminal (blockid=f1e2df79-d6e9-4faf-8d4d-668033c92186): error appending to blockfile: file does not exist
+2026-07-27 01:37:33.166 [wavesrv] sending blockcontroller update &blockcontroller.BlockControllerRuntimeStatus{BlockId:"f1e2df79-d6e9-4faf-8d4d-668033c92186", Version:1785127053167, ShellProcStatus:"done", ShellProcConnName:"", ShellProcExitCode:1, TsunamiPort:0}
+2026-07-27 01:37:33.166 [wavesrv] [shellproc] shell process wait loop done
+2026-07-27 01:37:33.166 [wavesrv] error getting block data: not found
+2026-07-27 01:37:35.508 [wavesrv] filestore flush: 1/1 entries flushed, err:<nil>
+2026-07-27 01:39:50.742 focus win 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:39:50.747 [wavesrv] FocusWindow 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:39:50.748 [wavesrv] client.WindowIds: [49d2f415-1535-43e9-95ad-bd61a84c0934]
+2026-07-27 01:39:50.749 [service] client.FocusWindow | 7ms
+2026-07-27 01:39:58.648 WaveObj updated tab:3a1ec3d8-98b9-4ff3-ace3-1239a031e5ba
+2026-07-27 01:39:58.649 WaveObj updated layout:ff2aab16-54a3-4bc0-8e6c-899772a0da68
+2026-07-27 01:39:58.649 WaveObj updated workspace:e222771f-3d78-4fc3-affe-3dcf59879f61
+2026-07-27 01:39:58.649 WaveObj updated block:4200c3b2-3e49-4157-a9e1-4671e2a5f2eb
+2026-07-27 01:39:58.649 [service] workspace.CreateTab | 7ms
+2026-07-27 01:39:58.652 getSpareTab: returning hotspare
+2026-07-27 01:39:58.652 initializing a new tab 
+2026-07-27 01:39:58.654 before wave ready, init tab, sending wave-init 3a1ec3d8-98b9-4ff3-ace3-1239a031e5ba 
+2026-07-27 01:39:58.661 [service] object.GetObject tab:3a1ec3d8-98b9-4ff3-ace3-1239a031e5ba | 13ms
+2026-07-27 01:39:58.662 WaveObj resolved tab:3a1ec3d8-98b9-4ff3-ace3-1239a031e5ba 14ms
+2026-07-27 01:39:58.663 [service] object.GetObject layout:ff2aab16-54a3-4bc0-8e6c-899772a0da68 | 14ms
+2026-07-27 01:39:58.663 WaveObj resolved layout:ff2aab16-54a3-4bc0-8e6c-899772a0da68 14ms
+2026-07-27 01:39:58.663 [service] object.GetObject workspace:e222771f-3d78-4fc3-affe-3dcf59879f61 | 14ms
+2026-07-27 01:39:58.663 WaveObj resolved workspace:e222771f-3d78-4fc3-affe-3dcf59879f61 14ms
+2026-07-27 01:39:58.664 [service] object.GetObject block:4200c3b2-3e49-4157-a9e1-4671e2a5f2eb | 15ms
+2026-07-27 01:39:58.665 WaveObj resolved block:4200c3b2-3e49-4157-a9e1-4671e2a5f2eb 16ms
+2026-07-27 01:39:58.668 fe-log Init Wave {"tabId":"3a1ec3d8-98b9-4ff3-ace3-1239a031e5ba","clientId":"a167a0b6-0937-40ad-b59e-ddebf82504a0","windowId":"49d2f415-1535-43e9-95ad-bd61a84c0934","activate":true}
+2026-07-27 01:39:58.679 [wavesrv] [websocket] new connection: connid:60ee9f53-7ff2-48c6-9d10-fcd39f6fbc03 stableid:tab:3a1ec3d8-98b9-4ff3-ace3-1239a031e5ba
+2026-07-27 01:39:58.679 [wavesrv] wshrouter register link 12#[ws:tab:3a1ec3d8-98b9-4ff3-ace3-1239a031e5ba]
+2026-07-27 01:39:58.679 [wavesrv] wshrouter trust link 12#[ws:tab:3a1ec3d8-98b9-4ff3-ace3-1239a031e5ba] kind=router
+2026-07-27 01:39:58.679 [wavesrv] link recvloop start for 12#[ws:tab:3a1ec3d8-98b9-4ff3-ace3-1239a031e5ba]
+2026-07-27 01:39:58.683 [wavesrv] wshrouter bind route "tab:3a1ec3d8-98b9-4ff3-ace3-1239a031e5ba" to 12#[ws:tab:3a1ec3d8-98b9-4ff3-ace3-1239a031e5ba]
+2026-07-27 01:39:58.819 wave-ready init time 165ms
+2026-07-27 01:39:58.949 [wavesrv] wshrouter bind route "feblock:4200c3b2-3e49-4157-a9e1-4671e2a5f2eb" to 12#[ws:tab:3a1ec3d8-98b9-4ff3-ace3-1239a031e5ba]
+2026-07-27 01:39:58.997 [wavesrv] block "4200c3b2-3e49-4157-a9e1-4671e2a5f2eb" run() lock
+2026-07-27 01:39:59.023 [wavesrv] sending blockcontroller update &blockcontroller.BlockControllerRuntimeStatus{BlockId:"4200c3b2-3e49-4157-a9e1-4671e2a5f2eb", Version:1785127199023, ShellProcStatus:"running", ShellProcConnName:"", ShellProcExitCode:0, TsunamiPort:0}
+2026-07-27 01:39:59.024 [wavesrv] block "4200c3b2-3e49-4157-a9e1-4671e2a5f2eb" run() unlock
+2026-07-27 01:39:59.165 ensureHotSpareTab
+2026-07-27 01:39:59.165 createBareTabView
+2026-07-27 01:39:59.444 [wavesrv] got domain socket connection
+2026-07-27 01:39:59.444 [wavesrv] wshrouter register link 13#[domain]
+2026-07-27 01:39:59.444 [wavesrv] link recvloop start for 13#[domain]
+2026-07-27 01:39:59.445 [wavesrv] wshrouter control-msg route=$control link=13#[domain] command=authenticatetoken source=
+2026-07-27 01:39:59.445 [wavesrv] wshrouter authenticate-token success linkid=13 routeid="proc:b5094ff9-0b0f-4755-9da4-17f856393412"
+2026-07-27 01:39:59.445 [wavesrv] wshrouter trust link 13#[domain] kind=leaf
+2026-07-27 01:39:59.445 [wavesrv] wshrouter bind route "proc:b5094ff9-0b0f-4755-9da4-17f856393412" to 13#[domain]
+2026-07-27 01:39:59.446 [wavesrv] wshrouter unbind route "proc:b5094ff9-0b0f-4755-9da4-17f856393412" from 13#[domain]
+2026-07-27 01:39:59.446 [wavesrv] link recvloop done for 13#[domain] (unknown)
+2026-07-27 01:39:59.446 [wavesrv] wshrouter unregister link 13#[domain]
+2026-07-27 01:39:59.955 fe-log Init Bare
+2026-07-27 01:40:00.046 tabview init 879ms
+2026-07-27 01:40:00.512 [wavesrv] filestore flush: 1/1 entries flushed, err:<nil>
+2026-07-27 01:40:01.058 [wavesrv] DeleteBlock: parentBlockCount: 0
+2026-07-27 01:40:01.061 WaveObj deleted tab:3a1ec3d8-98b9-4ff3-ace3-1239a031e5ba
+2026-07-27 01:40:01.061 WaveObj deleted block:4200c3b2-3e49-4157-a9e1-4671e2a5f2eb
+2026-07-27 01:40:01.061 WaveObj updated workspace:e222771f-3d78-4fc3-affe-3dcf59879f61
+2026-07-27 01:40:01.061 WaveObj deleted layout:ff2aab16-54a3-4bc0-8e6c-899772a0da68
+2026-07-27 01:40:01.061 [service] workspace.CloseTab | 6ms
+2026-07-27 01:40:01.061 reusing an existing tab, calling wave-init 19151dd5-f992-48c1-a601-2a675dcae7a7
+2026-07-27 01:40:01.071 [wavesrv] wshrouter unbind route "feblock:4200c3b2-3e49-4157-a9e1-4671e2a5f2eb" from 12#[ws:tab:3a1ec3d8-98b9-4ff3-ace3-1239a031e5ba]
+2026-07-27 01:40:01.071 [wavesrv] wshrouter unbind route "feblock:4200c3b2-3e49-4157-a9e1-4671e2a5f2eb" from 12#[ws:tab:3a1ec3d8-98b9-4ff3-ace3-1239a031e5ba]
+2026-07-27 01:40:01.075 fe-log Reinit Wave
+2026-07-27 01:40:01.075 [wavesrv] error reading from shell: read |0: file already closed
+2026-07-27 01:40:01.076 [wavesrv] [shellproc] pty-read loop done
+2026-07-27 01:40:01.076 [wavesrv] sending blockcontroller update blockcontroller.BlockControllerRuntimeStatus{BlockId:"4200c3b2-3e49-4157-a9e1-4671e2a5f2eb", Version:1785127201073, ShellProcStatus:"done", ShellProcConnName:"", ShellProcExitCode:0, TsunamiPort:0}
+2026-07-27 01:40:01.076 [wavesrv] sending blockcontroller update blockcontroller.BlockControllerRuntimeStatus{BlockId:"4200c3b2-3e49-4157-a9e1-4671e2a5f2eb", Version:1785127201074, ShellProcStatus:"done", ShellProcConnName:"", ShellProcExitCode:0, TsunamiPort:0}
+2026-07-27 01:40:01.076 [wavesrv] error writing muted message to terminal (blockid=4200c3b2-3e49-4157-a9e1-4671e2a5f2eb): error appending to blockfile: file does not exist
+2026-07-27 01:40:01.076 [wavesrv] sending blockcontroller update &blockcontroller.BlockControllerRuntimeStatus{BlockId:"4200c3b2-3e49-4157-a9e1-4671e2a5f2eb", Version:1785127201075, ShellProcStatus:"done", ShellProcConnName:"", ShellProcExitCode:1, TsunamiPort:0}
+2026-07-27 01:40:01.076 [wavesrv] [shellproc] shell process wait loop done
+2026-07-27 01:40:01.076 [wavesrv] error getting block data: not found
+2026-07-27 01:40:02.073 destroy tab 3a1ec3d8-98b9-4ff3-ace3-1239a031e5ba
+2026-07-27 01:40:02.077 [wavesrv] [websocket] ReadPump error (tab:3a1ec3d8-98b9-4ff3-ace3-1239a031e5ba): websocket: close 1001 (going away)
+2026-07-27 01:40:02.077 [wavesrv] link recvloop done for 12#[ws:tab:3a1ec3d8-98b9-4ff3-ace3-1239a031e5ba] (unknown)
+2026-07-27 01:40:02.077 [wavesrv] wshrouter unbind route "tab:3a1ec3d8-98b9-4ff3-ace3-1239a031e5ba" from 12#[ws:tab:3a1ec3d8-98b9-4ff3-ace3-1239a031e5ba]
+2026-07-27 01:40:02.078 [wavesrv] wshrouter unregister link 12#[ws:tab:3a1ec3d8-98b9-4ff3-ace3-1239a031e5ba]
+2026-07-27 01:40:30.585 focus win 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:40:30.594 [wavesrv] FocusWindow 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:40:30.595 [wavesrv] client.WindowIds: [49d2f415-1535-43e9-95ad-bd61a84c0934]
+2026-07-27 01:40:30.596 [service] client.FocusWindow | 11ms
+2026-07-27 01:40:35.405 [wavesrv] SetMetaCommand: tab:19151dd5-f992-48c1-a601-2a675dcae7a7 | map[tab:flagcolor:#58C142]
+2026-07-27 01:40:39.262 [wavesrv] SetMetaCommand: tab:19151dd5-f992-48c1-a601-2a675dcae7a7 | map[tab:flagcolor:<nil>]
+2026-07-27 01:40:44.102 [wavesrv] SetMetaCommand: tab:19151dd5-f992-48c1-a601-2a675dcae7a7 | map[bg:*:true tab:background:bg@ocean-depths]
+2026-07-27 01:40:48.062 [wavesrv] SetMetaCommand: tab:19151dd5-f992-48c1-a601-2a675dcae7a7 | map[bg:*:true tab:background:bg@aqua-horizon]
+2026-07-27 01:40:53.759 [wavesrv] SetMetaCommand: tab:19151dd5-f992-48c1-a601-2a675dcae7a7 | map[bg:*:true tab:background:bg@ocean-depths]
+2026-07-27 01:40:56.809 [wavesrv] SetMetaCommand: tab:19151dd5-f992-48c1-a601-2a675dcae7a7 | map[bg:*:true tab:background:bg@rainbow]
+2026-07-27 01:41:00.656 [wavesrv] SetMetaCommand: tab:19151dd5-f992-48c1-a601-2a675dcae7a7 | map[bg:*:true tab:background:bg@enchantedforest]
+2026-07-27 01:41:04.632 [wavesrv] SetMetaCommand: tab:19151dd5-f992-48c1-a601-2a675dcae7a7 | map[bg:*:true tab:background:bg@cosmic-tide]
+2026-07-27 01:41:08.236 [wavesrv] SetMetaCommand: tab:19151dd5-f992-48c1-a601-2a675dcae7a7 | map[bg:*:true tab:background:bg@twilight-ember]
+2026-07-27 01:41:11.620 [wavesrv] SetMetaCommand: tab:19151dd5-f992-48c1-a601-2a675dcae7a7 | map[bg:*:true tab:background:bg@tropical-radiance]
+2026-07-27 01:41:14.728 [wavesrv] SetMetaCommand: tab:19151dd5-f992-48c1-a601-2a675dcae7a7 | map[bg:*:true tab:background:bg@duskhorizon]
+2026-07-27 01:41:18.553 [wavesrv] SetMetaCommand: tab:19151dd5-f992-48c1-a601-2a675dcae7a7 | map[bg:*:true tab:background:bg@twilight-mist]
+2026-07-27 01:41:28.488 [wavesrv] SetMetaCommand: tab:19151dd5-f992-48c1-a601-2a675dcae7a7 | map[bg:*:true tab:background:bg@enchantedforest]
+2026-07-27 01:41:34.409 [wavesrv] SetMetaCommand: tab:19151dd5-f992-48c1-a601-2a675dcae7a7 | map[bg:*:true tab:background:bg@enchantedforest]
+2026-07-27 01:41:38.535 [wavesrv] SetMetaCommand: tab:19151dd5-f992-48c1-a601-2a675dcae7a7 | map[bg:*:true tab:background:bg@sunset]
+2026-07-27 01:41:42.246 [wavesrv] SetMetaCommand: tab:19151dd5-f992-48c1-a601-2a675dcae7a7 | map[bg:*:true tab:background:bg@ocean-depths]
+2026-07-27 01:41:47.880 [wavesrv] SetMetaCommand: tab:19151dd5-f992-48c1-a601-2a675dcae7a7 | map[bg:*:true tab:background:bg@aqua-horizon]
+2026-07-27 01:41:54.475 [wavesrv] SetMetaCommand: tab:19151dd5-f992-48c1-a601-2a675dcae7a7 | map[bg:*:true tab:background:bg@green]
+2026-07-27 01:41:58.319 [wavesrv] SetMetaCommand: tab:19151dd5-f992-48c1-a601-2a675dcae7a7 | map[bg:*:true tab:background:<nil>]
+2026-07-27 01:42:03.327 [wavesrv] SetMetaCommand: tab:19151dd5-f992-48c1-a601-2a675dcae7a7 | map[bg:*:true tab:background:bg@green]
+2026-07-27 01:42:16.088 [wavesrv] SetMetaCommand: tab:19151dd5-f992-48c1-a601-2a675dcae7a7 | map[bg:*:true tab:background:bg@enchantedforest]
+2026-07-27 01:42:21.286 [wavesrv] SetMetaCommand: tab:19151dd5-f992-48c1-a601-2a675dcae7a7 | map[bg:*:true tab:background:bg@green]
+2026-07-27 01:42:38.556 [wavesrv] SetMetaCommand: workspace:e222771f-3d78-4fc3-affe-3dcf59879f61 | map[layout:widgetsvisible:false]
+2026-07-27 01:42:40.520 [wavesrv] filestore flush: 1/1 entries flushed, err:<nil>
+2026-07-27 01:42:47.247 [wavesrv] SetMetaCommand: workspace:e222771f-3d78-4fc3-affe-3dcf59879f61 | map[layout:widgetsvisible:true]
+2026-07-27 01:42:50.521 [wavesrv] filestore flush: 1/1 entries flushed, err:<nil>
+2026-07-27 01:43:15.912 focus win 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:43:15.920 [wavesrv] FocusWindow 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:43:15.920 [wavesrv] client.WindowIds: [49d2f415-1535-43e9-95ad-bd61a84c0934]
+2026-07-27 01:43:15.923 [service] client.FocusWindow | 11ms
+2026-07-27 01:43:20.827 [wavesrv] SetMetaCommand: block:d70941fd-e067-4f8f-9b9c-8660ef97d287 | map[term:theme:default-dark]
+2026-07-27 01:43:24.875 [wavesrv] SetMetaCommand: block:d70941fd-e067-4f8f-9b9c-8660ef97d287 | map[term:theme:onedarkpro]
+2026-07-27 01:43:28.468 [wavesrv] SetMetaCommand: block:d70941fd-e067-4f8f-9b9c-8660ef97d287 | map[term:theme:dracula]
+2026-07-27 01:43:33.028 [wavesrv] SetMetaCommand: block:d70941fd-e067-4f8f-9b9c-8660ef97d287 | map[term:theme:rosepine]
+2026-07-27 01:43:37.437 [wavesrv] SetMetaCommand: block:d70941fd-e067-4f8f-9b9c-8660ef97d287 | map[term:theme:monokai]
+2026-07-27 01:43:40.178 [wavesrv] SetMetaCommand: block:d70941fd-e067-4f8f-9b9c-8660ef97d287 | map[term:theme:<nil>]
+2026-07-27 01:43:43.386 [wavesrv] SetMetaCommand: block:d70941fd-e067-4f8f-9b9c-8660ef97d287 | map[term:theme:default-dark]
+2026-07-27 01:43:46.193 [wavesrv] SetMetaCommand: block:d70941fd-e067-4f8f-9b9c-8660ef97d287 | map[term:theme:<nil>]
+2026-07-27 01:44:04.780 [wavesrv] SetMetaCommand: block:d70941fd-e067-4f8f-9b9c-8660ef97d287 | map[term:cursor:bar term:cursorblink:false]
+2026-07-27 01:44:11.111 [wavesrv] SetMetaCommand: block:d70941fd-e067-4f8f-9b9c-8660ef97d287 | map[term:cursor:block term:cursorblink:false]
+2026-07-27 01:44:15.440 [wavesrv] SetMetaCommand: block:d70941fd-e067-4f8f-9b9c-8660ef97d287 | map[term:cursor:block term:cursorblink:true]
+2026-07-27 01:44:19.887 [wavesrv] SetMetaCommand: block:d70941fd-e067-4f8f-9b9c-8660ef97d287 | map[term:cursor:<nil> term:cursorblink:<nil>]
+2026-07-27 01:44:25.526 [wavesrv] filestore flush: 1/1 entries flushed, err:<nil>
+2026-07-27 01:44:27.740 [wavesrv] SetMetaCommand: block:d70941fd-e067-4f8f-9b9c-8660ef97d287 | map[term:cursor:bar term:cursorblink:false]
+2026-07-27 01:44:33.023 [wavesrv] SetMetaCommand: block:d70941fd-e067-4f8f-9b9c-8660ef97d287 | map[term:cursor:bar term:cursorblink:true]
+2026-07-27 01:44:40.527 [wavesrv] filestore flush: 1/1 entries flushed, err:<nil>
+2026-07-27 01:44:45.527 [wavesrv] filestore flush: 1/1 entries flushed, err:<nil>
+2026-07-27 01:44:50.527 [wavesrv] filestore flush: 1/1 entries flushed, err:<nil>
+2026-07-27 01:44:55.528 [wavesrv] filestore flush: 1/1 entries flushed, err:<nil>
+2026-07-27 01:45:02.170 [wavesrv] SetMetaCommand: block:d70941fd-e067-4f8f-9b9c-8660ef97d287 | map[term:cursor:underline term:cursorblink:true]
+2026-07-27 01:45:05.528 [wavesrv] filestore flush: 1/1 entries flushed, err:<nil>
+2026-07-27 01:45:10.337 [wavesrv] SetMetaCommand: block:d70941fd-e067-4f8f-9b9c-8660ef97d287 | map[term:cursor:bar term:cursorblink:true]
+2026-07-27 01:45:10.529 [wavesrv] filestore flush: 1/1 entries flushed, err:<nil>
+2026-07-27 01:45:15.530 [wavesrv] filestore flush: 1/1 entries flushed, err:<nil>
+2026-07-27 01:45:21.123 [wavesrv] SetMetaCommand: block:d70941fd-e067-4f8f-9b9c-8660ef97d287 | map[term:transparency:0.5]
+2026-07-27 01:45:24.043 [wavesrv] SetMetaCommand: block:d70941fd-e067-4f8f-9b9c-8660ef97d287 | map[term:transparency:0]
+2026-07-27 01:45:28.328 [wavesrv] SetMetaCommand: block:d70941fd-e067-4f8f-9b9c-8660ef97d287 | map[term:theme:default-dark]
+2026-07-27 01:45:30.968 [wavesrv] SetMetaCommand: block:d70941fd-e067-4f8f-9b9c-8660ef97d287 | map[term:theme:monokai]
+2026-07-27 01:45:34.386 [wavesrv] SetMetaCommand: block:d70941fd-e067-4f8f-9b9c-8660ef97d287 | map[term:theme:warmyellow]
+2026-07-27 01:45:37.589 [wavesrv] SetMetaCommand: block:d70941fd-e067-4f8f-9b9c-8660ef97d287 | map[term:theme:rosepine]
+2026-07-27 01:45:40.939 [wavesrv] SetMetaCommand: block:d70941fd-e067-4f8f-9b9c-8660ef97d287 | map[term:theme:dracula]
+2026-07-27 01:45:43.556 [wavesrv] SetMetaCommand: block:d70941fd-e067-4f8f-9b9c-8660ef97d287 | map[term:theme:<nil>]
+2026-07-27 01:45:47.327 [wavesrv] SetMetaCommand: block:d70941fd-e067-4f8f-9b9c-8660ef97d287 | map[term:transparency:<nil>]
+2026-07-27 01:46:25.533 [wavesrv] filestore flush: 1/1 entries flushed, err:<nil>
+2026-07-27 01:47:31.561 focus win 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:47:31.567 [wavesrv] FocusWindow 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:47:31.567 [wavesrv] client.WindowIds: [49d2f415-1535-43e9-95ad-bd61a84c0934]
+2026-07-27 01:47:31.569 [service] client.FocusWindow | 8ms
+2026-07-27 01:47:34.554 [wavesrv] Stat: C:\Users\arthu\workspaces\config\waveterm/presets.json
+2026-07-27 01:47:34.554 [wavesrv] Read: C:\Users\arthu\workspaces\config\waveterm/settings.json
+2026-07-27 01:47:34.669 [wavesrv] SetMetaCommand: block:f2d1638f-3758-4778-aaa5-eaf4bc08c0a6 | map[file:settings.json]
+2026-07-27 01:47:36.072 [wavesrv] Read: C:\Users\arthu\workspaces\config\waveterm/widgets.json
+2026-07-27 01:47:36.087 [wavesrv] SetMetaCommand: block:f2d1638f-3758-4778-aaa5-eaf4bc08c0a6 | map[file:widgets.json]
+2026-07-27 01:47:40.494 [wavesrv] PutFile: C:\Users\arthu\workspaces\config\waveterm/widgets.json
+2026-07-27 01:48:01.552 [wavesrv] PutFile: C:\Users\arthu\workspaces\config\waveterm/widgets.json
+2026-07-27 01:48:21.734 focus win 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:48:21.745 [wavesrv] FocusWindow 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:48:21.745 [wavesrv] client.WindowIds: [49d2f415-1535-43e9-95ad-bd61a84c0934]
+2026-07-27 01:48:21.755 [service] client.FocusWindow | 20ms
+2026-07-27 01:48:25.312 WaveObj updated window:49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:48:25.312 [service] window.SetWindowPosAndSize | 5ms
+2026-07-27 01:48:25.313 WaveObj updated window:49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:48:25.313 [service] window.SetWindowPosAndSize | 5ms
+2026-07-27 01:48:48.354 focus win 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:48:48.364 [wavesrv] FocusWindow 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:48:48.364 [wavesrv] client.WindowIds: [49d2f415-1535-43e9-95ad-bd61a84c0934]
+2026-07-27 01:48:48.366 [service] client.FocusWindow | 12ms
+2026-07-27 01:48:48.756 WaveObj updated window:49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:48:48.756 [service] window.SetWindowPosAndSize | 4ms
+2026-07-27 01:48:48.757 WaveObj updated window:49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:48:48.757 [service] window.SetWindowPosAndSize | 5ms
+2026-07-27 01:48:58.991 [wavesrv] PutFile: C:\Users\arthu\workspaces\config\waveterm/widgets.json
+2026-07-27 01:49:28.619 focus win 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:49:28.628 [wavesrv] FocusWindow 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:49:28.628 [wavesrv] client.WindowIds: [49d2f415-1535-43e9-95ad-bd61a84c0934]
+2026-07-27 01:49:28.630 [service] client.FocusWindow | 11ms
+2026-07-27 01:49:33.037 WaveObj updated window:49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:49:33.037 [service] window.SetWindowPosAndSize | 7ms
+2026-07-27 01:49:33.056 WaveObj updated window:49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:49:33.056 [service] window.SetWindowPosAndSize | 25ms
+2026-07-27 01:49:33.587 focus win 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:49:33.594 [wavesrv] FocusWindow 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:49:33.595 [wavesrv] client.WindowIds: [49d2f415-1535-43e9-95ad-bd61a84c0934]
+2026-07-27 01:49:33.597 [service] client.FocusWindow | 10ms
+2026-07-27 01:49:33.999 WaveObj updated window:49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:49:33.999 [service] window.SetWindowPosAndSize | 10ms
+2026-07-27 01:49:34.000 WaveObj updated window:49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:49:34.000 [service] window.SetWindowPosAndSize | 10ms
+2026-07-27 01:50:02.370 focus win 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:50:02.380 [wavesrv] FocusWindow 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:50:02.380 [wavesrv] client.WindowIds: [49d2f415-1535-43e9-95ad-bd61a84c0934]
+2026-07-27 01:50:02.382 [service] client.FocusWindow | 12ms
+2026-07-27 01:50:05.898 [wavesrv] DeleteBlock: parentBlockCount: 2
+2026-07-27 01:50:09.801 [wavesrv] warning: no connections from ssh config found: no ssh config files could be opened: 
+2026-07-27 01:50:09.801 open C:\Users\arthu\.ssh\config: The system cannot find the file specified.
+2026-07-27 01:50:09.801 open \etc\ssh\config: The system cannot find the path specified.
+2026-07-27 01:50:14.955 win 'close' handler fired 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:50:14.983 win 'closed' handler fired 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:50:14.984 destroy tab 19151dd5-f992-48c1-a601-2a675dcae7a7
+2026-07-27 01:50:14.985 stopping updater
+2026-07-27 01:50:16.555 waveterm-app starting, data_dir=C:\Users\arthu\workspaces\config\data\waveterm, config_dir=C:\Users\arthu\workspaces\config\waveterm electronpath=C:\Users\arthu\AppData\Local\Programs\waveterm\resources\app.asar\dist gopath=C:\Users\arthu\AppData\Local\Programs\waveterm\resources\app.asar.unpacked\dist arch=win32/x64 electron=41.1.0
+2026-07-27 01:50:16.560 trying to run local server C:\Users\arthu\AppData\Local\Programs\waveterm\resources\app.asar.unpacked\dist\bin\wavesrv.x64.exe
+2026-07-27 01:50:16.575 spawned wavesrv
+2026-07-27 01:50:16.618 [wavesrv] wshrouter register link 1#[control]
+2026-07-27 01:50:16.618 [wavesrv] wshrouter trust link 1#[control] kind=leaf
+2026-07-27 01:50:16.618 [wavesrv] wshrouter registered control route "$control" linkid=1
+2026-07-27 01:50:16.618 [wavesrv] wshrouter registered control:root route linkid=1
+2026-07-27 01:50:16.618 [wavesrv] link recvloop start for 1#[control]
+2026-07-27 01:50:16.618 [wavesrv] [base] acquiring lock on C:\Users\arthu\workspaces\config\data\waveterm\wave.lock
+2026-07-27 01:50:16.618 [wavesrv] wave version: 0.14.5 (202604161539)
+2026-07-27 01:50:16.619 [wavesrv] wave data dir: C:\Users\arthu\workspaces\config\data\waveterm
+2026-07-27 01:50:16.619 [wavesrv] wave config dir: C:\Users\arthu\workspaces\config\waveterm
+2026-07-27 01:50:16.619 [wavesrv] [db] opening db C:\Users\arthu\workspaces\config\data\waveterm\db\filestore.db
+2026-07-27 01:50:16.619 [wavesrv] migrate filestore
+2026-07-27 01:50:16.628 [wavesrv] filestore initialized
+2026-07-27 01:50:16.628 [wavesrv] migrate wstore
+2026-07-27 01:50:16.634 [wavesrv] wstore initialized
+2026-07-27 01:50:16.634 [wavesrv] initializing wsh and shell startup files
+2026-07-27 01:50:16.634 [wavesrv] clientid: a167a0b6-0937-40ad-b59e-ddebf82504a0
+2026-07-27 01:50:16.634 [wavesrv] client has one window
+2026-07-27 01:50:16.634 [wavesrv] CheckAndFixWindow 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:50:16.635 [wavesrv] JWT Public Key:
+2026-07-27 01:50:16.635 -----BEGIN PUBLIC KEY-----
+2026-07-27 01:50:16.635 MCowBQYDK2VwAyEAmjYHCUeZterCqiI7ePSRpQfVwaqW+X1XXn52t5wmTD0=
+2026-07-27 01:50:16.635 -----END PUBLIC KEY-----
+2026-07-27 01:50:16.635 [wavesrv] wshrouter register link 2#[main-client]
+2026-07-27 01:50:16.635 [wavesrv] wshrouter trust link 2#[main-client] kind=leaf
+2026-07-27 01:50:16.635 [wavesrv] wshrouter bind route "wavesrv" to 2#[main-client]
+2026-07-27 01:50:16.636 [wavesrv] link recvloop start for 2#[main-client]
+2026-07-27 01:50:16.636 [wavesrv] wshrouter register link 3#[bare-client]
+2026-07-27 01:50:16.636 [wavesrv] wshrouter trust link 3#[bare-client] kind=leaf
+2026-07-27 01:50:16.636 [wavesrv] wshrouter bind route "bare:14b9af24-937b-41ed-9f5a-9ebc9cfc2db4" to 3#[bare-client]
+2026-07-27 01:50:16.636 [wavesrv] link recvloop start for 3#[bare-client]
+2026-07-27 01:50:16.636 [wavesrv] wshrouter register link 4#[conn:local]
+2026-07-27 01:50:16.636 [wavesrv] wshrouter trust link 4#[conn:local] kind=leaf
+2026-07-27 01:50:16.636 [wavesrv] wshrouter bind route "conn:local" to 4#[conn:local]
+2026-07-27 01:50:16.636 [wavesrv] link recvloop start for 4#[conn:local]
+2026-07-27 01:50:16.636 [wavesrv] create config watcher, configdir="C:\\Users\\arthu\\workspaces\\config\\waveterm"
+2026-07-27 01:50:16.637 [wavesrv] subdirs: [C:\Users\arthu\workspaces\config\waveterm\mimetypes C:\Users\arthu\workspaces\config\waveterm\defaultwidgets C:\Users\arthu\workspaces\config\waveterm\widgets C:\Users\arthu\workspaces\config\waveterm\presets C:\Users\arthu\workspaces\config\waveterm\backgrounds C:\Users\arthu\workspaces\config\waveterm\termthemes C:\Users\arthu\workspaces\config\waveterm\connections C:\Users\arthu\workspaces\config\waveterm\bookmarks C:\Users\arthu\workspaces\config\waveterm\waveai]
+2026-07-27 01:50:16.639 [wavesrv] starting file watcher
+2026-07-27 01:50:16.642 [wavesrv] AI mode config watcher initialized
+2026-07-27 01:50:16.643 [wavesrv] initializing badge store
+2026-07-27 01:50:16.647 [wavesrv] Server [web] listening on 127.0.0.1:54914
+2026-07-27 01:50:16.648 [wavesrv] Server [websocket] listening on 127.0.0.1:54915
+2026-07-27 01:50:16.648 [wavesrv] [websocket] running websocket server on 127.0.0.1:54915
+2026-07-27 01:50:16.651 [wavesrv] Server [unix-domain] listening on C:\Users\arthu\workspaces\config\data\waveterm\wave.sock
+2026-07-27 01:50:16.652 wavesrv ready signal received true 94 ms
+2026-07-27 01:50:16.660 [wavesrv] Schema is nil, initializing
+2026-07-27 01:50:16.660 [wavesrv] Found static site at C:\Users\arthu\AppData\Local\Programs\waveterm\resources\app.asar.unpacked\dist\schema, serving
+2026-07-27 01:50:16.677 [wavesrv] wsh binary successfully copied from "wsh-0.14.5-windows.x64.exe" to "C:\\Users\\arthu\\workspaces\\config\\data\\waveterm\\bin\\wsh.exe"
+2026-07-27 01:50:16.684 [wavesrv] [websocket] new connection: connid:fae8a5d8-6cd1-48a4-b64e-47dda6c2d712 stableid:electron
+2026-07-27 01:50:16.684 [wavesrv] wshrouter register link 5#[ws:electron]
+2026-07-27 01:50:16.684 [wavesrv] wshrouter trust link 5#[ws:electron] kind=router
+2026-07-27 01:50:16.684 [wavesrv] link recvloop start for 5#[ws:electron]
+2026-07-27 01:50:16.684 [wavesrv] wshrouter bind route "electron" to 5#[ws:electron]
+2026-07-27 01:50:16.796 ensureHotSpareTab
+2026-07-27 01:50:16.796 createBareTabView
+2026-07-27 01:50:16.809 relaunchBrowserWindows
+2026-07-27 01:50:16.883 [wavesrv] GetClientData
+2026-07-27 01:50:16.890 [service] client.GetClientData | 81ms
+2026-07-27 01:50:16.898 [service] window.GetWindow | 6ms
+2026-07-27 01:50:16.900 relaunch -- creating window 49d2f415-1535-43e9-95ad-bd61a84c0934 {
+  oid: '49d2f415-1535-43e9-95ad-bd61a84c0934',
+  version: 12,
+  workspaceid: 'e222771f-3d78-4fc3-affe-3dcf59879f61',
+  pos: { x: -8, y: -8 },
+  winsize: { width: 1296, height: 688 },
+  lastfocusts: 0,
+  meta: null
+} (primary startup)
+2026-07-27 01:50:16.904 [service] workspace.GetWorkspace | 4ms
+2026-07-27 01:50:16.904 createBrowserWindow 49d2f415-1535-43e9-95ad-bd61a84c0934 e222771f-3d78-4fc3-affe-3dcf59879f61 {
+  oid: 'e222771f-3d78-4fc3-affe-3dcf59879f61',
+  version: 24,
+  name: 'Main',
+  icon: 'custom@wave-logo-solid',
+  color: '#58C142',
+  tabids: [ '19151dd5-f992-48c1-a601-2a675dcae7a7' ],
+  activetabid: '19151dd5-f992-48c1-a601-2a675dcae7a7',
+  meta: { 'layout:widgetsvisible': true }
+}
+2026-07-27 01:50:16.905 create win 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:50:16.915 setActiveTab 19151dd5-f992-48c1-a601-2a675dcae7a7 49d2f415-1535-43e9-95ad-bd61a84c0934 e222771f-3d78-4fc3-affe-3dcf59879f61 false (primary startup)
+2026-07-27 01:50:16.919 getSpareTab: returning hotspare
+2026-07-27 01:50:16.919 initializing a new tab (primary startup)
+2026-07-27 01:50:16.922 [wavesrv] GetClientData
+2026-07-27 01:50:16.928 [service] client.GetClientData | 9ms
+2026-07-27 01:50:16.967 windows-updated 1 builder-active: false
+2026-07-27 01:50:17.431 ensureHotSpareTab
+2026-07-27 01:50:17.431 createBareTabView
+2026-07-27 01:50:20.197 fe-log Init Bare
+2026-07-27 01:50:20.317 tabview init 3512ms
+2026-07-27 01:50:20.322 before wave ready, init tab, sending wave-init 19151dd5-f992-48c1-a601-2a675dcae7a7 (primary startup)
+2026-07-27 01:50:20.324 fe-log Init Wave {"tabId":"19151dd5-f992-48c1-a601-2a675dcae7a7","clientId":"a167a0b6-0937-40ad-b59e-ddebf82504a0","windowId":"49d2f415-1535-43e9-95ad-bd61a84c0934","activate":true,"primaryTabStartup":true}
+2026-07-27 01:50:20.330 [wavesrv] [websocket] new connection: connid:7a550e17-ab63-471d-ae68-b3848caf3c49 stableid:tab:19151dd5-f992-48c1-a601-2a675dcae7a7
+2026-07-27 01:50:20.330 [wavesrv] wshrouter register link 6#[ws:tab:19151dd5-f992-48c1-a601-2a675dcae7a7]
+2026-07-27 01:50:20.330 [wavesrv] wshrouter trust link 6#[ws:tab:19151dd5-f992-48c1-a601-2a675dcae7a7] kind=router
+2026-07-27 01:50:20.330 [wavesrv] link recvloop start for 6#[ws:tab:19151dd5-f992-48c1-a601-2a675dcae7a7]
+2026-07-27 01:50:20.333 [wavesrv] wshrouter bind route "tab:19151dd5-f992-48c1-a601-2a675dcae7a7" to 6#[ws:tab:19151dd5-f992-48c1-a601-2a675dcae7a7]
+2026-07-27 01:50:20.533 wave-ready init time 211ms
+2026-07-27 01:50:20.533 designated quake window 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:50:20.534 show window 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:50:20.554 Configuring updater
+2026-07-27 01:50:20.561 focus win 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:50:20.564 Update check interval in milliseconds: 3600000
+2026-07-27 01:50:20.564 Update check enabled: true
+2026-07-27 01:50:20.565 Install update on quit: true
+2026-07-27 01:50:20.573 Updater config from binary: {
+  provider: 'generic',
+  url: 'https://dl.waveterm.dev/releases-w2',
+  updaterCacheDirName: 'waveterm-updater',
+  publisherName: [ 'Command Line Inc' ]
+}
+2026-07-27 01:50:20.573 Update channel: latest
+2026-07-27 01:50:20.574 starting updater
+2026-07-27 01:50:20.574 checking-for-update
+2026-07-27 01:50:20.591 [wavesrv] FocusWindow 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:50:20.591 [wavesrv] client.WindowIds: [49d2f415-1535-43e9-95ad-bd61a84c0934]
+2026-07-27 01:50:20.597 [wavesrv] wshrouter bind route "feblock:d70941fd-e067-4f8f-9b9c-8660ef97d287" to 6#[ws:tab:19151dd5-f992-48c1-a601-2a675dcae7a7]
+2026-07-27 01:50:20.600 [service] client.FocusWindow | 39ms
+2026-07-27 01:50:20.695 update-not-available
+2026-07-27 01:50:20.695 setMaxTabCacheSize 10
+2026-07-27 01:50:20.967 WaveObj updated window:49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:50:20.968 [service] window.SetWindowPosAndSize | 9ms
+2026-07-27 01:50:20.974 [service] object.GetObject window:49d2f415-1535-43e9-95ad-bd61a84c0934 | 8ms
+2026-07-27 01:50:20.975 WaveObj resolved window:49d2f415-1535-43e9-95ad-bd61a84c0934 9ms
+2026-07-27 01:50:21.120 [wavesrv] block "d70941fd-e067-4f8f-9b9c-8660ef97d287" run() lock
+2026-07-27 01:50:21.120 [wavesrv] sending blockcontroller update &blockcontroller.BlockControllerRuntimeStatus{BlockId:"d70941fd-e067-4f8f-9b9c-8660ef97d287", Version:1785127821037, ShellProcStatus:"running", ShellProcConnName:"", ShellProcExitCode:0, TsunamiPort:0}
+2026-07-27 01:50:21.120 [wavesrv] block "d70941fd-e067-4f8f-9b9c-8660ef97d287" run() unlock
+2026-07-27 01:50:21.122 fe-log Init Bare
+2026-07-27 01:50:21.363 tabview init 3931ms
+2026-07-27 01:50:21.635 [wavesrv] filestore flush: 1/1 entries flushed, err:<nil>
+2026-07-27 01:50:22.302 [wavesrv] got domain socket connection
+2026-07-27 01:50:22.302 [wavesrv] wshrouter register link 7#[domain]
+2026-07-27 01:50:22.302 [wavesrv] link recvloop start for 7#[domain]
+2026-07-27 01:50:22.302 [wavesrv] wshrouter control-msg route=$control link=7#[domain] command=authenticatetoken source=
+2026-07-27 01:50:22.303 [wavesrv] wshrouter authenticate-token success linkid=7 routeid="proc:6a561dc2-d699-4618-b98d-9cf31e58fe2f"
+2026-07-27 01:50:22.303 [wavesrv] wshrouter trust link 7#[domain] kind=leaf
+2026-07-27 01:50:22.303 [wavesrv] wshrouter bind route "proc:6a561dc2-d699-4618-b98d-9cf31e58fe2f" to 7#[domain]
+2026-07-27 01:50:22.327 [wavesrv] wshrouter unbind route "proc:6a561dc2-d699-4618-b98d-9cf31e58fe2f" from 7#[domain]
+2026-07-27 01:50:22.327 [wavesrv] wshrouter unregister link 7#[domain]
+2026-07-27 01:50:22.327 [wavesrv] link recvloop done for 7#[domain] (unknown)
+2026-07-27 01:50:26.636 [wavesrv] filestore flush: 1/1 entries flushed, err:<nil>
+2026-07-27 01:50:26.647 [wavesrv] [wcloud] sending request POST https://api.waveterm.dev/central/tevents
+2026-07-27 01:50:27.586 [wavesrv] [wcloud] sent 34 tevents (latency: 939.1484ms)
+2026-07-27 01:50:31.788 win 'close' handler fired 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:50:31.800 win 'closed' handler fired 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:50:31.801 destroy tab 19151dd5-f992-48c1-a601-2a675dcae7a7
+2026-07-27 01:50:31.801 stopping updater
+2026-07-27 01:55:52.280 waveterm-app starting, data_dir=C:\Users\arthu\workspaces\config\data\waveterm, config_dir=C:\Users\arthu\workspaces\config\waveterm electronpath=C:\Users\arthu\AppData\Local\Programs\waveterm\resources\app.asar\dist gopath=C:\Users\arthu\AppData\Local\Programs\waveterm\resources\app.asar.unpacked\dist arch=win32/x64 electron=41.1.0
+2026-07-27 01:55:52.284 trying to run local server C:\Users\arthu\AppData\Local\Programs\waveterm\resources\app.asar.unpacked\dist\bin\wavesrv.x64.exe
+2026-07-27 01:55:52.295 spawned wavesrv
+2026-07-27 01:55:52.330 [wavesrv] wshrouter register link 1#[control]
+2026-07-27 01:55:52.330 [wavesrv] wshrouter trust link 1#[control] kind=leaf
+2026-07-27 01:55:52.330 [wavesrv] wshrouter registered control route "$control" linkid=1
+2026-07-27 01:55:52.330 [wavesrv] wshrouter registered control:root route linkid=1
+2026-07-27 01:55:52.330 [wavesrv] link recvloop start for 1#[control]
+2026-07-27 01:55:52.330 [wavesrv] [base] acquiring lock on C:\Users\arthu\workspaces\config\data\waveterm\wave.lock
+2026-07-27 01:55:52.330 [wavesrv] wave version: 0.14.5 (202604161539)
+2026-07-27 01:55:52.330 [wavesrv] wave data dir: C:\Users\arthu\workspaces\config\data\waveterm
+2026-07-27 01:55:52.330 [wavesrv] wave config dir: C:\Users\arthu\workspaces\config\waveterm
+2026-07-27 01:55:52.330 [wavesrv] [db] opening db C:\Users\arthu\workspaces\config\data\waveterm\db\filestore.db
+2026-07-27 01:55:52.330 [wavesrv] migrate filestore
+2026-07-27 01:55:52.330 [wavesrv] filestore initialized
+2026-07-27 01:55:52.330 [wavesrv] migrate wstore
+2026-07-27 01:55:52.340 [wavesrv] wstore initialized
+2026-07-27 01:55:52.340 [wavesrv] initializing wsh and shell startup files
+2026-07-27 01:55:52.340 [wavesrv] clientid: a167a0b6-0937-40ad-b59e-ddebf82504a0
+2026-07-27 01:55:52.340 [wavesrv] client has one window
+2026-07-27 01:55:52.340 [wavesrv] CheckAndFixWindow 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:55:52.340 [wavesrv] JWT Public Key:
+2026-07-27 01:55:52.340 -----BEGIN PUBLIC KEY-----
+2026-07-27 01:55:52.340 MCowBQYDK2VwAyEAmjYHCUeZterCqiI7ePSRpQfVwaqW+X1XXn52t5wmTD0=
+2026-07-27 01:55:52.340 -----END PUBLIC KEY-----
+2026-07-27 01:55:52.340 [wavesrv] wshrouter register link 2#[main-client]
+2026-07-27 01:55:52.340 [wavesrv] wshrouter trust link 2#[main-client] kind=leaf
+2026-07-27 01:55:52.340 [wavesrv] wshrouter bind route "wavesrv" to 2#[main-client]
+2026-07-27 01:55:52.340 [wavesrv] link recvloop start for 2#[main-client]
+2026-07-27 01:55:52.340 [wavesrv] wshrouter register link 3#[bare-client]
+2026-07-27 01:55:52.341 [wavesrv] wshrouter trust link 3#[bare-client] kind=leaf
+2026-07-27 01:55:52.341 [wavesrv] wshrouter bind route "bare:1ecf9536-54d9-407d-8097-6303291d7c98" to 3#[bare-client]
+2026-07-27 01:55:52.341 [wavesrv] link recvloop start for 3#[bare-client]
+2026-07-27 01:55:52.341 [wavesrv] wshrouter register link 4#[conn:local]
+2026-07-27 01:55:52.341 [wavesrv] wshrouter trust link 4#[conn:local] kind=leaf
+2026-07-27 01:55:52.341 [wavesrv] wshrouter bind route "conn:local" to 4#[conn:local]
+2026-07-27 01:55:52.341 [wavesrv] link recvloop start for 4#[conn:local]
+2026-07-27 01:55:52.341 [wavesrv] create config watcher, configdir="C:\\Users\\arthu\\workspaces\\config\\waveterm"
+2026-07-27 01:55:52.341 [wavesrv] subdirs: [C:\Users\arthu\workspaces\config\waveterm\mimetypes C:\Users\arthu\workspaces\config\waveterm\defaultwidgets C:\Users\arthu\workspaces\config\waveterm\widgets C:\Users\arthu\workspaces\config\waveterm\presets C:\Users\arthu\workspaces\config\waveterm\backgrounds C:\Users\arthu\workspaces\config\waveterm\termthemes C:\Users\arthu\workspaces\config\waveterm\connections C:\Users\arthu\workspaces\config\waveterm\bookmarks C:\Users\arthu\workspaces\config\waveterm\waveai]
+2026-07-27 01:55:52.341 [wavesrv] starting file watcher
+2026-07-27 01:55:52.344 [wavesrv] AI mode config watcher initialized
+2026-07-27 01:55:52.345 [wavesrv] initializing badge store
+2026-07-27 01:55:52.346 [wavesrv] Server [web] listening on 127.0.0.1:55854
+2026-07-27 01:55:52.347 [wavesrv] Server [websocket] listening on 127.0.0.1:55855
+2026-07-27 01:55:52.347 [wavesrv] [websocket] running websocket server on 127.0.0.1:55855
+2026-07-27 01:55:52.350 [wavesrv] Server [unix-domain] listening on C:\Users\arthu\workspaces\config\data\waveterm\wave.sock
+2026-07-27 01:55:52.351 wavesrv ready signal received true 68 ms
+2026-07-27 01:55:52.360 [wavesrv] Schema is nil, initializing
+2026-07-27 01:55:52.360 [wavesrv] Found static site at C:\Users\arthu\AppData\Local\Programs\waveterm\resources\app.asar.unpacked\dist\schema, serving
+2026-07-27 01:55:52.374 [wavesrv] wsh binary successfully copied from "wsh-0.14.5-windows.x64.exe" to "C:\\Users\\arthu\\workspaces\\config\\data\\waveterm\\bin\\wsh.exe"
+2026-07-27 01:55:52.390 [wavesrv] [websocket] new connection: connid:07c79f49-96df-4ffa-98bc-b41dbbde389b stableid:electron
+2026-07-27 01:55:52.390 [wavesrv] wshrouter register link 5#[ws:electron]
+2026-07-27 01:55:52.390 [wavesrv] wshrouter trust link 5#[ws:electron] kind=router
+2026-07-27 01:55:52.390 [wavesrv] link recvloop start for 5#[ws:electron]
+2026-07-27 01:55:52.390 [wavesrv] wshrouter bind route "electron" to 5#[ws:electron]
+2026-07-27 01:55:52.496 ensureHotSpareTab
+2026-07-27 01:55:52.496 createBareTabView
+2026-07-27 01:55:52.510 relaunchBrowserWindows
+2026-07-27 01:55:52.598 [wavesrv] GetClientData
+2026-07-27 01:55:52.602 [service] client.GetClientData | 91ms
+2026-07-27 01:55:52.609 [service] window.GetWindow | 4ms
+2026-07-27 01:55:52.611 relaunch -- creating window 49d2f415-1535-43e9-95ad-bd61a84c0934 {
+  oid: '49d2f415-1535-43e9-95ad-bd61a84c0934',
+  version: 13,
+  workspaceid: 'e222771f-3d78-4fc3-affe-3dcf59879f61',
+  pos: { x: 0, y: 0 },
+  winsize: { width: 1280, height: 672 },
+  lastfocusts: 0,
+  meta: null
+} (primary startup)
+2026-07-27 01:55:52.617 [service] workspace.GetWorkspace | 6ms
+2026-07-27 01:55:52.617 createBrowserWindow 49d2f415-1535-43e9-95ad-bd61a84c0934 e222771f-3d78-4fc3-affe-3dcf59879f61 {
+  oid: 'e222771f-3d78-4fc3-affe-3dcf59879f61',
+  version: 24,
+  name: 'Main',
+  icon: 'custom@wave-logo-solid',
+  color: '#58C142',
+  tabids: [ '19151dd5-f992-48c1-a601-2a675dcae7a7' ],
+  activetabid: '19151dd5-f992-48c1-a601-2a675dcae7a7',
+  meta: { 'layout:widgetsvisible': true }
+}
+2026-07-27 01:55:52.617 create win 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:55:52.629 setActiveTab 19151dd5-f992-48c1-a601-2a675dcae7a7 49d2f415-1535-43e9-95ad-bd61a84c0934 e222771f-3d78-4fc3-affe-3dcf59879f61 false (primary startup)
+2026-07-27 01:55:52.635 getSpareTab: returning hotspare
+2026-07-27 01:55:52.636 initializing a new tab (primary startup)
+2026-07-27 01:55:52.642 [wavesrv] GetClientData
+2026-07-27 01:55:52.645 [service] client.GetClientData | 9ms
+2026-07-27 01:55:52.681 windows-updated 1 builder-active: false
+2026-07-27 01:55:53.143 ensureHotSpareTab
+2026-07-27 01:55:53.143 createBareTabView
+2026-07-27 01:55:53.468 fe-log Init Bare
+2026-07-27 01:55:53.575 tabview init 1069ms
+2026-07-27 01:55:53.580 before wave ready, init tab, sending wave-init 19151dd5-f992-48c1-a601-2a675dcae7a7 (primary startup)
+2026-07-27 01:55:53.582 fe-log Init Wave {"tabId":"19151dd5-f992-48c1-a601-2a675dcae7a7","clientId":"a167a0b6-0937-40ad-b59e-ddebf82504a0","windowId":"49d2f415-1535-43e9-95ad-bd61a84c0934","activate":true,"primaryTabStartup":true}
+2026-07-27 01:55:53.587 [wavesrv] [websocket] new connection: connid:46606b96-fed2-4633-b78f-6516ad47bd55 stableid:tab:19151dd5-f992-48c1-a601-2a675dcae7a7
+2026-07-27 01:55:53.588 [wavesrv] wshrouter register link 6#[ws:tab:19151dd5-f992-48c1-a601-2a675dcae7a7]
+2026-07-27 01:55:53.588 [wavesrv] wshrouter trust link 6#[ws:tab:19151dd5-f992-48c1-a601-2a675dcae7a7] kind=router
+2026-07-27 01:55:53.588 [wavesrv] link recvloop start for 6#[ws:tab:19151dd5-f992-48c1-a601-2a675dcae7a7]
+2026-07-27 01:55:53.590 [wavesrv] wshrouter bind route "tab:19151dd5-f992-48c1-a601-2a675dcae7a7" to 6#[ws:tab:19151dd5-f992-48c1-a601-2a675dcae7a7]
+2026-07-27 01:55:53.750 wave-ready init time 170ms
+2026-07-27 01:55:53.750 designated quake window 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:55:53.750 show window 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:55:53.768 Configuring updater
+2026-07-27 01:55:53.770 Update check interval in milliseconds: 3600000
+2026-07-27 01:55:53.770 Update check enabled: true
+2026-07-27 01:55:53.771 Install update on quit: true
+2026-07-27 01:55:53.778 Updater config from binary: {
+  provider: 'generic',
+  url: 'https://dl.waveterm.dev/releases-w2',
+  updaterCacheDirName: 'waveterm-updater',
+  publisherName: [ 'Command Line Inc' ]
+}
+2026-07-27 01:55:53.778 Update channel: latest
+2026-07-27 01:55:53.778 starting updater
+2026-07-27 01:55:53.779 checking-for-update
+2026-07-27 01:55:53.783 focus win 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:55:53.795 [wavesrv] FocusWindow 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:55:53.795 [wavesrv] client.WindowIds: [49d2f415-1535-43e9-95ad-bd61a84c0934]
+2026-07-27 01:55:53.795 [wavesrv] wshrouter bind route "feblock:d70941fd-e067-4f8f-9b9c-8660ef97d287" to 6#[ws:tab:19151dd5-f992-48c1-a601-2a675dcae7a7]
+2026-07-27 01:55:53.797 [service] client.FocusWindow | 14ms
+2026-07-27 01:55:53.977 [wavesrv] block "d70941fd-e067-4f8f-9b9c-8660ef97d287" run() lock
+2026-07-27 01:55:53.987 update-not-available
+2026-07-27 01:55:53.987 setMaxTabCacheSize 10
+2026-07-27 01:55:54.020 [wavesrv] sending blockcontroller update &blockcontroller.BlockControllerRuntimeStatus{BlockId:"d70941fd-e067-4f8f-9b9c-8660ef97d287", Version:1785128154021, ShellProcStatus:"running", ShellProcConnName:"", ShellProcExitCode:0, TsunamiPort:0}
+2026-07-27 01:55:54.021 [wavesrv] block "d70941fd-e067-4f8f-9b9c-8660ef97d287" run() unlock
+2026-07-27 01:55:54.029 fe-log Init Bare
+2026-07-27 01:55:54.136 tabview init 991ms
+2026-07-27 01:55:54.183 WaveObj updated window:49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 01:55:54.183 [service] window.SetWindowPosAndSize | 7ms
+2026-07-27 01:55:54.187 [service] object.GetObject window:49d2f415-1535-43e9-95ad-bd61a84c0934 | 5ms
+2026-07-27 01:55:54.187 WaveObj resolved window:49d2f415-1535-43e9-95ad-bd61a84c0934 5ms
+2026-07-27 01:55:54.649 [wavesrv] got domain socket connection
+2026-07-27 01:55:54.649 [wavesrv] wshrouter register link 7#[domain]
+2026-07-27 01:55:54.649 [wavesrv] link recvloop start for 7#[domain]
+2026-07-27 01:55:54.649 [wavesrv] wshrouter control-msg route=$control link=7#[domain] command=authenticatetoken source=
+2026-07-27 01:55:54.649 [wavesrv] wshrouter authenticate-token success linkid=7 routeid="proc:c998368f-e448-4712-9b62-2d617e6de809"
+2026-07-27 01:55:54.649 [wavesrv] wshrouter trust link 7#[domain] kind=leaf
+2026-07-27 01:55:54.649 [wavesrv] wshrouter bind route "proc:c998368f-e448-4712-9b62-2d617e6de809" to 7#[domain]
+2026-07-27 01:55:54.649 [wavesrv] wshrouter unbind route "proc:c998368f-e448-4712-9b62-2d617e6de809" from 7#[domain]
+2026-07-27 01:55:54.649 [wavesrv] link recvloop done for 7#[domain] (unknown)
+2026-07-27 01:55:54.649 [wavesrv] wshrouter unregister link 7#[domain]
+2026-07-27 01:55:57.329 [wavesrv] filestore flush: 1/1 entries flushed, err:<nil>
+2026-07-27 01:56:02.330 [wavesrv] filestore flush: 1/1 entries flushed, err:<nil>
+2026-07-27 01:56:02.345 [wavesrv] [wcloud] sending request POST https://api.waveterm.dev/central/tevents
+2026-07-27 01:56:03.186 [wavesrv] [wcloud] sent 5 tevents (latency: 840.9347ms)
+2026-07-27 01:56:07.331 [wavesrv] filestore flush: 1/1 entries flushed, err:<nil>
+2026-07-27 02:00:12.630 focus win 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 02:00:12.640 [wavesrv] FocusWindow 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 02:00:12.641 [wavesrv] client.WindowIds: [49d2f415-1535-43e9-95ad-bd61a84c0934]
+2026-07-27 02:00:12.643 [service] client.FocusWindow | 13ms
+2026-07-27 02:02:40.759 focus win 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 02:02:40.768 [wavesrv] FocusWindow 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 02:02:40.769 [wavesrv] client.WindowIds: [49d2f415-1535-43e9-95ad-bd61a84c0934]
+2026-07-27 02:02:40.771 [service] client.FocusWindow | 12ms
+2026-07-27 02:02:47.358 [wavesrv] filestore flush: 1/1 entries flushed, err:<nil>
+2026-07-27 02:02:52.359 [wavesrv] filestore flush: 1/1 entries flushed, err:<nil>
+2026-07-27 02:03:44.596 focus win 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 02:03:44.611 [wavesrv] FocusWindow 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 02:03:44.611 [wavesrv] client.WindowIds: [49d2f415-1535-43e9-95ad-bd61a84c0934]
+2026-07-27 02:03:44.614 [service] client.FocusWindow | 17ms
+2026-07-27 02:03:47.361 [wavesrv] filestore flush: 1/1 entries flushed, err:<nil>
+2026-07-27 02:03:52.362 [wavesrv] filestore flush: 1/1 entries flushed, err:<nil>
+2026-07-27 02:03:57.363 [wavesrv] filestore flush: 1/1 entries flushed, err:<nil>
+2026-07-27 02:04:02.364 [wavesrv] filestore flush: 1/1 entries flushed, err:<nil>
+2026-07-27 02:04:12.364 [wavesrv] filestore flush: 1/1 entries flushed, err:<nil>
+2026-07-27 02:07:21.555 focus win 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 02:07:21.565 [wavesrv] FocusWindow 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 02:07:21.565 [wavesrv] client.WindowIds: [49d2f415-1535-43e9-95ad-bd61a84c0934]
+2026-07-27 02:07:21.567 [service] client.FocusWindow | 12ms
+2026-07-27 02:07:24.233 focus win 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 02:07:24.277 [wavesrv] FocusWindow 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 02:07:24.277 [wavesrv] client.WindowIds: [49d2f415-1535-43e9-95ad-bd61a84c0934]
+2026-07-27 02:07:24.279 [service] client.FocusWindow | 45ms
+2026-07-27 02:10:33.210 focus win 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 02:10:33.217 [wavesrv] FocusWindow 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 02:10:33.218 [wavesrv] client.WindowIds: [49d2f415-1535-43e9-95ad-bd61a84c0934]
+2026-07-27 02:10:33.219 [service] client.FocusWindow | 9ms
+2026-07-27 02:10:37.385 [wavesrv] filestore flush: 1/1 entries flushed, err:<nil>
+2026-07-27 02:10:42.385 [wavesrv] filestore flush: 1/1 entries flushed, err:<nil>
+2026-07-27 02:10:52.386 [wavesrv] filestore flush: 1/1 entries flushed, err:<nil>
+2026-07-27 02:10:57.386 [wavesrv] filestore flush: 1/1 entries flushed, err:<nil>
+2026-07-27 02:11:02.386 [wavesrv] filestore flush: 1/1 entries flushed, err:<nil>
+2026-07-27 02:11:07.387 [wavesrv] filestore flush: 1/1 entries flushed, err:<nil>
+2026-07-27 02:11:12.388 [wavesrv] filestore flush: 1/1 entries flushed, err:<nil>
+2026-07-27 02:11:17.389 [wavesrv] filestore flush: 2/2 entries flushed, err:<nil>
+2026-07-27 02:17:52.702 focus win 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 02:17:52.710 [wavesrv] FocusWindow 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 02:17:52.711 [wavesrv] client.WindowIds: [49d2f415-1535-43e9-95ad-bd61a84c0934]
+2026-07-27 02:17:52.717 [service] client.FocusWindow | 15ms
+2026-07-27 02:21:15.624 focus win 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 02:21:15.632 [wavesrv] FocusWindow 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 02:21:15.632 [wavesrv] client.WindowIds: [49d2f415-1535-43e9-95ad-bd61a84c0934]
+2026-07-27 02:21:15.634 [service] client.FocusWindow | 10ms
+2026-07-27 02:21:22.408 [wavesrv] filestore flush: 1/1 entries flushed, err:<nil>
+2026-07-27 02:21:37.409 [wavesrv] filestore flush: 1/1 entries flushed, err:<nil>
+2026-07-27 02:21:42.410 [wavesrv] filestore flush: 1/1 entries flushed, err:<nil>
+2026-07-27 02:21:52.412 [wavesrv] filestore flush: 1/1 entries flushed, err:<nil>
+2026-07-27 02:21:57.412 [wavesrv] filestore flush: 1/1 entries flushed, err:<nil>
+2026-07-27 02:22:02.413 [wavesrv] filestore flush: 1/1 entries flushed, err:<nil>
+2026-07-27 02:22:52.416 [wavesrv] filestore flush: 1/1 entries flushed, err:<nil>
+2026-07-27 02:22:57.417 [wavesrv] filestore flush: 1/1 entries flushed, err:<nil>
+2026-07-27 02:23:02.419 [wavesrv] filestore flush: 1/1 entries flushed, err:<nil>
+2026-07-27 02:23:19.508 focus win 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 02:23:19.516 [wavesrv] FocusWindow 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 02:23:19.517 [wavesrv] client.WindowIds: [49d2f415-1535-43e9-95ad-bd61a84c0934]
+2026-07-27 02:23:19.518 [service] client.FocusWindow | 10ms
+2026-07-27 02:23:32.420 [wavesrv] filestore flush: 1/1 entries flushed, err:<nil>
+2026-07-27 02:24:23.889 focus win 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 02:24:23.917 [wavesrv] FocusWindow 49d2f415-1535-43e9-95ad-bd61a84c0934
+2026-07-27 02:24:23.918 [wavesrv] client.WindowIds: [49d2f415-1535-43e9-95ad-bd61a84c0934]
+2026-07-27 02:24:23.920 [service] client.FocusWindow | 31ms
+2026-07-27 02:24:27.447 [wavesrv] filestore flush: 1/1 entries flushed, err:<nil>
