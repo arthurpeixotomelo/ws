@@ -1,5 +1,5 @@
 # We source this file with -NoExit -File
-$env:PATH = "C:\Users\arthu\workspaces\config\data\waveterm\bin" + ";" + $env:PATH
+$env:PATH = "C:\Users\arthu\ws\config\data\waveterm\bin" + ";" + $env:PATH
 
 # Source dynamic script from wsh token
 $waveterm_swaptoken_output = wsh token $env:WAVETERM_SWAPTOKEN pwsh 2>$null | Out-String

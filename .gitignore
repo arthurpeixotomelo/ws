@@ -1,3 +1,7 @@
-*.sock
 ts/*/
 py/*/
+*.sock
+*.lock
+*.log
+*.*-shm
+*.*-wal

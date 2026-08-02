@@ -1,6 +1,6 @@
 # this file is sourced with -C
 # Add Wave binary directory to PATH
-set -x PATH "C:\\Users\\arthu\\workspaces\\config\\data\\waveterm\\bin" $PATH
+set -x PATH "C:\\Users\\arthu\\ws\\config\\data\\waveterm\\bin" $PATH
 
 # Source dynamic script from wsh token (the echo is to prevent fish from complaining about empty input)
 wsh token "$WAVETERM_SWAPTOKEN" fish 2>/dev/null | source

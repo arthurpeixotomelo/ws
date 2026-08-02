@@ -1,6 +1,5 @@
-const carapace_file = $"($nu.default-config-dir)/carapace.nu"
-
 if not (which carapace | is-empty) {
+    const carapace_file = $"($nu.default-config-dir)/carapace.nu"
     carapace _carapace nushell | save --force $carapace_file
     if ($carapace_file | path exists) {
         source $carapace_file
@@ -30,10 +29,7 @@ $env.PROMPT_COMMAND_RIGHT = {||
     starship prompt --right --cmd-duration $env.CMD_DURATION_MS $'--status=($env.LAST_EXIT_CODE)' --terminal-width (term size).columns
 }
 
-const NU_LIB_DIRS = [
-    ($nu.default-config-dir | path join 'scripts')
-    ($nu.default-config-dir | path join 'modules')
-    ($nu.default-config-dir | path join 'completions')
+const NU_PLUGIN_DIRS = [
+    ($nu.current-exe | path dirname)
+    ($nu.default-config-dir | path join 'plugins')
 ]
-
-const NU_PLUGIN_DIRS = [($nu.default-config-dir | path join 'plugins')]

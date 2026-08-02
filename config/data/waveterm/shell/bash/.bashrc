@@ -4,7 +4,7 @@ if [ -f /etc/profile ]; then
     . /etc/profile
 fi
 
-WAVETERM_WSHBINDIR="C:\\Users\\arthu\\workspaces\\config\\data\\waveterm\\bin"
+WAVETERM_WSHBINDIR="C:\\Users\\arthu\\ws\\config\\data\\waveterm\\bin"
 
 # after /etc/profile which is likely to clobber the path
 export PATH="$WAVETERM_WSHBINDIR:$PATH"

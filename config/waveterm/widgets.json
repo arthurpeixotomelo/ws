@@ -2,7 +2,7 @@
   "defwidget@terminal": {
     "display:order": -5,
     "icon": "square-terminal",
-    "label": "NU",
+    "label": "nushell",
     "color": "green",
     "blockdef": {
       "meta": {

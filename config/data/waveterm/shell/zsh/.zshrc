@@ -1,5 +1,5 @@
 # add wsh to path, source dynamic script from wsh token
-WAVETERM_WSHBINDIR="C:\\Users\\arthu\\workspaces\\config\\data\\waveterm\\bin"
+WAVETERM_WSHBINDIR="C:\\Users\\arthu\\ws\\config\\data\\waveterm\\bin"
 export PATH="$WAVETERM_WSHBINDIR:$PATH"
 source <(wsh token "$WAVETERM_SWAPTOKEN" zsh 2>/dev/null)
 unset WAVETERM_SWAPTOKEN
