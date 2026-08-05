@@ -35,13 +35,13 @@ preset = "default"
 [keymap.overrides]
 
 [language_servers.pylsp]
-enable_flake8 = false
+enable_flake8 = true
 enable_mypy = true
-enable_pydocstyle = false
-enable_pyflakes = false
-enable_pylint = false
+enable_pydocstyle = true
+enable_pyflakes = true
+enable_pylint = true
 enable_ruff = true
-enabled = false
+enabled = true
 
 [mcp]
 presets = []

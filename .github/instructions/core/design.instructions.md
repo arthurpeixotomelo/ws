@@ -1,110 +1,66 @@
 ---
-description: 'Comprehensive design principles covering architecture, code quality, and data modeling.'
-applyTo: '**'
+description: "Trimmed design, architecture, and performance principles for everyday coding work."
+applyTo: "**"
 ---
 
-# Design & Architecture Principles
+# Design & Architecture
 
-## Core Patterns & Principles 🧭
+## Default behavior
 
-- 🔄 **Modular/Hexagonal Architecture (Ports & Adapters):** Split core business logic from external systems via well-defined interfaces.
-- 🎯 **Single Responsibility Principle (SRP):** Each module, function, or class should have one clear responsibility.
-- 🔍 **Separation of Concerns:** Keep business logic, API integrations, and presentation in separate modules.
-- 🚪 **Open/Closed Principle:** Design modules to be open for extension but closed for modification.
-- 💉 **Dependency Injection:** Inject dependencies (loggers, clients, config) where possible to improve testability and flexibility.
-- ❄️ **Immutability:** Prefer immutable data structures and avoid mutating shared state.
-- ⚡ **Fail Fast & Defensive Programming:** Validate inputs and fail early with clear errors.
-- 🛠️ **Configuration as Code:** Store all configuration in environment variables or config files, never in code.
-- 🐣 **YAGNI (You Aren’t Gonna Need It):** Don’t add features or abstractions until they are needed.
-- 🤓 **KISS (Keep It Simple, Stupid):** Prefer simple, straightforward solutions over complex ones.
-- 📚 **Documentation-Driven Development:** Write or update documentation as you design new features or refactor code.
-- 🛡️ **Centralized Error Handling & Logging:** Handle errors in a consistent way and use structured logging, avoiding sensitive data leaks.
-- 🔄 **Consistent Error & Response Formats:** Ensure handlers and utilities return errors and responses uniformly.
-- 🔺 **Test Pyramid:** Favor more unit tests than integration tests, and more integration tests than end-to-end tests. Keep tests fast and focused.
-- **Pre-release App**: This application is currently in pre-release. It is not intended for production use and may contain bugs or incomplete features. **NEVER** account for backwards-compatibility in this codebase. If you need to make a change that breaks backwards compatibility, do so without hesitation, since this version WILL NOT be used in production.
+- **Pre-release codebase**: never preserve backward compatibility; break freely
+  when needed.
+- **Fail fast**: validate inputs at boundaries and raise typed errors early.
+- **YAGNI / KISS**: add abstractions and features only when needed; prefer the
+  obvious solution.
 
-## Code-Level Design Principles (Object Calisthenics)
+## Code shape
 
-1. **One Level of Indentation per Method**: Ensure methods are simple. Extract methods to reduce nesting.
-2. **Don't Use the ELSE Keyword**: Use early returns and guard clauses. Fail fast.
-3. **Wrap Primitives and Strings**: Encapsulate primitives in value objects (e.g., `Age`, `Email`) to provide context and behavior.
-4. **First Class Collections**: Encapsulate collections in classes. A class with a collection should contain no other member variables.
-5. **One Dot per Line**: Follow the Law of Demeter. Avoid chaining method calls that reach deep into object graphs.
-6. **Don't Abbreviate**: Use meaningful names. Avoid `U`, `N`, etc.
-7. **Keep Entities Small**: Max 50 lines per class, 10 methods. Single responsibility.
-8. **No Classes with More Than Two Instance Variables**: Encourages high cohesion. (Loggers/Services don't count).
-9. **No Getters/Setters in Domain Classes**: Tell, Don't Ask. Use private constructors and static factory methods.
+- One level of indentation per method; extract helpers to flatten nested logic.
+- Prefer early returns and guard clauses over `else`.
+- Keep call chains short; avoid deep object-graph traversal in one line.
+- Use descriptive names; avoid abbreviations.
+- Keep entities small: roughly 50 lines or fewer per class, 10 methods or fewer,
+  and no more than two instance fields unless the abstraction truly needs more.
+- Domain classes should tell, not ask: avoid getters/setters where behavior can
+  be expressed directly.
 
-## Data Architecture & Modeling
+## Architecture
 
-### Data Modeling Principles
-- **Star Schema (Dimensional Modeling)**:
-  - **Dimension Tables**: Descriptive entities (Products, Customers). Surrogate keys. Wide and shallow.
-  - **Fact Tables**: Measurable events (Sales). Foreign keys + measures. Narrow and deep.
-  - **Relationships**: One-to-Many (Dim -> Fact). Avoid Many-to-Many and Bi-directional filtering.
-- **Normalization**: 3NF for operational DBs. Star Schema for analytics.
-- **Naming**: Singular tables/columns (`customer`, `order_id`). Snake_case.
+- Keep core logic free of framework-specific imports; isolate external systems
+  behind interfaces or adapters.
+- Inject dependencies such as clients, config, and loggers rather than
+  hard-wiring them.
+- Prefer immutable data and avoid mutating shared state.
+- Give each module, function, and class a single clear responsibility.
+- Design for extension, not constant rework.
 
-### Database Standards
-- **Primary Keys**: Mandatory for every table (`id`).
-- **Audit Columns**: `created_at`, `updated_at`.
-- **Constraints**: NOT NULL by default. Enforce Foreign Keys.
-- **Indexing**: Index FKs and frequent query columns. Avoid over-indexing.
-- **File Organization**: `db/{migrations,seeds,schema}/`.
+## Errors & logging
 
-### SQL Development
-- **Style**: Uppercase keywords (SELECT, WHERE). Consistent indentation.
-- **Query Structure**: Explicit JOINs. SARGable WHERE clauses.
-- **Stored Procedures**: Parameterize queries. Handle transactions.
+- Handle failures in a consistent way and return a predictable error shape.
+- Log structured events; never log secrets, tokens, or personal data.
+- Add trace IDs to cross-boundary operations.
 
-### Power BI & Analytical Specifics
-- **Date Tables**: Dedicated Date dimension with hierarchy.
-- **SCD**: Type 1 (Overwrite) or Type 2 (History) as needed.
-- **Performance**: Import Mode (optimize types/columns) vs DirectQuery (optimize source indexes).
+## Performance
 
-## API Strategy 🛣️
+- Measure first; profile before optimizing.
+- Optimize the common path rather than rare edge cases.
+- Avoid O(n²) or worse; review nested loops and recursive hotspots.
+- Batch database and network calls; avoid N+1 patterns.
+- Use non-blocking I/O and connection pools for hot paths.
+- Cache only hot, non-volatile, non-sensitive data and invalidate it
+  deliberately.
+- Paginate or stream large responses rather than returning oversized payloads.
 
-- 📜 **Versioning & Deprecation:** Embed version (e.g., `v1`) in endpoint paths or headers.
-- 🤝 **Contract-First Testing & API Governance:** Use Pact/contract tests; publish breaking-change calendars.
+## Data modeling
 
-## Security 🔒
+- Use 3NF for operational databases and a star schema for analytics.
+- Every table needs a primary key and audit columns such as `created_at` and
+  `updated_at`.
+- Enforce foreign keys and index foreign keys plus frequent filter columns.
+- Use singular snake_case names such as `customer` and `order_id`.
 
-- ⚙️ **OAuth 2.0 & Least Privilege:** Request only needed scopes; rotate tokens.
-- 🔍 **Supply-Chain Security:** SBOM, dependency scans, block critical CVEs.
-- 🏷️ **Immutable Releases:** Build once, deploy everywhere.
-- 📝 **Verify & Throttle:** Validate signatures, rate limits, circuit breakers.
-- 🧰 **Defensive Coding:** SAST in CI, log security events.
+## APIs & releases
 
-## Resilience & Observability 🔭
-
-- 🔁 **Retries & Backoff:** Handle transient failures.
-- 🔎 **Distributed Tracing:** OpenTelemetry for full flows.
-- 💥 **Chaos Engineering:** Regular fault injection.
-- 🎯 **SLOs:** Monitor metrics against budgets.
-- 🏷️ **Log Correlation:** Trace IDs for all actions.
-
-## DevOps & CI/CD ⚙️
-
-- 🤖 **GitHub Actions:** Automate lint/test/scan.
-- 🌐 **IaC:** Terraform/Pulumi for infrastructure.
-
-## Integration Patterns 🔗
-
-- 🔔 **Webhooks:** Subscribe minimally.
-- 🔄 **Event-Driven:** Publish to message brokers.
-- 🪄 **Saga Patterns:** Orchestrate multi-step workflows.
-
-## Virtual Collaboration & Workflow 🌐
-
-- 📖 **Living Documentation:** Design docs in repo.
-- 🚩 **Feature Flags:** Gradual rollouts.
-
-## Data Management & Compliance 📊
-
-- 🗑️ **Retention:** Automate purges.
-- 🔐 **Encryption:** At-rest and in-transit.
-
-## Governance & Team Flow ⚖️
-
-- 🌿 **Branching:** Trunk-based development.
-- 🗂️ **ADRs:** Record architectural decisions.
+- Version endpoints when they are public or shared (`/v1/...`).
+- Keep configuration in environment variables or config files instead of
+  hard-coding it.

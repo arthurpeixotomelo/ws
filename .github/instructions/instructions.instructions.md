@@ -88,13 +88,16 @@ Provide concrete examples with clear labels:
 
 ### Tool-First Verification Guidance
 
-- Prefer automated tool invocations for verification (examples: runCommands, terminal, CI runner APIs).
+- Prefer automated tool invocations for verification (examples: runCommands,
+  terminal, CI runner APIs).
 - When describing verification steps, include:
   - exact tool name and command
   - working directory and env requirements
   - expected success criteria (exit codes, artifacts, coverage thresholds)
-- Require provenance: record which tools were invoked (tool name + command) and include them in the "Used Instructions & Docs" block under `tools:`.
-- If tools are not available, state this explicitly and provide a concise manual fallback with clear instructions for the user to run locally.
+- Require provenance: record which tools were invoked (tool name + command) and
+  include them in the "Used Instructions & Docs" block under `tools:`.
+- If tools are not available, state this explicitly and provide a concise manual
+  fallback with clear instructions for the user to run locally.
 
 ## Content Guidelines
 

@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "hooks": {
+    "PostToolUse": [
+      {
+        "type": "command",
+        "matcher": "create|edit",
+        "cwd": ".",
+        "command": "nu .github/hooks/format.nu"
+      },
+      {
+        "type": "command",
+        "command": "nu .github/hooks/lint.nu",
+        "cwd": "."
+      }
+    ],
+    "Stop": [
+      {
+        "type": "command",
+        "command": "nu .github/hooks/validate.nu",
+        "cwd": ".",
+        "timeoutSec": 120
+      }
+    ]
+  }
+}
