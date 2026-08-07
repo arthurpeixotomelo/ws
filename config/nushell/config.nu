@@ -1,10 +1,29 @@
 if not (which carapace | is-empty) {
-    const carapace_file = $"($nu.default-config-dir)/carapace.nu"
+    const carapace_file = ($nu.default-config-dir | path join "carapace.nu")
     carapace _carapace nushell | save --force $carapace_file
     if ($carapace_file | path exists) {
         source $carapace_file
     }
 }
+
+$env._WAVETERM_SI_FIRSTPROMPT = true
+
+def _waveterm_si_osc7 [] {
+    let enc = ($env.PWD | url encode)
+    print -n $"\e]7;file://localhost/($enc)\a"
+}
+
+$env.config.hooks.pre_prompt = ($env.config.hooks.pre_prompt? | default [] | append {||
+    if $env._WAVETERM_SI_FIRSTPROMPT {
+        let v = (version).version
+        print -n $"\e]16162;M;{\"shell\":\"nu\",\"shellversion\":\($v\),\"integration\":false}\a"
+        $env._WAVETERM_SI_FIRSTPROMPT = false
+    }
+    _waveterm_si_osc7
+})
+
+alias sudo = ^pass show user | ^sudo -S
+
 
 $env.config.show_banner = false
 $env.config.history.file_format = "sqlite"
