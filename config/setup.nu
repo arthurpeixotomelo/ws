@@ -1,4 +1,12 @@
-# run `nu --no-config-file; git clone https://github.com/arthurpeixotomelo/ws.git; nu /ws/config/setup.nu`
+# run this script with root privileges
+# nu --no-config-file
+# git clone https://github.com/arthurpeixotomelo/ws.git; nu /ws/config/setup.nu`
+
+# preinstallation packages
+# git base-devel flatpack xdg-desktop-portal-cosmic pass ffmpeg openrgb solaar uv deno nushell starship github-cli nerdctl containerd steam blender obs-studio
+
+# ticket for sudo privileges as arthy user
+sudo -u arthy -v
 
 # save xdg global environment vars
 ["XDG_CONFIG_HOME=/ws/config", "XDG_DATA_HOME=/ws/config/data"] | str join (char nl) | save -a /etc/environment
@@ -12,7 +20,7 @@ git clone https://aur.archlinux.org/paru.git /tmp/paru
 chown -R arthy /tmp/paru
 sudo -u arthy -- sh -c 'cd /tmp/paru && makepkg -si --noconfirm'
 rm -rp /tmp/paru
-paru -S --noconfirm microsoft-edge-stable wave-terminal-bin visual-studio-code-bin carapace-bin ollama
+sudo -u arthy paru -S --noconfirm microsoft-edge-stable-bin waveterm-bin visual-studio-code-bin carapace-bin ollama
 
 # setup gpg and pass 
 r#'
@@ -25,6 +33,3 @@ Expire-Date: 0
 gpg --list-secret-keys
 pass init (gpg --list-secret-keys | lines | get 3 | str trim)
 pass insert user
-
-
-# git base-devel flatpack xdg-desktop-portal-cosmic gnome-keyring libsecret pass ffmpeg deno nushell starship github-cli nerdctl containerd blender obs-studio
