@@ -14,7 +14,7 @@ chsh -s /usr/bin/nu
 
 # install paru (AUR helper) and then install AUR packages
 git clone https://aur.archlinux.org/paru.git /tmp/paru
-cd /tmp/paru && makepkg -si --noconfirm
+cd /tmp/paru; makepkg -si --noconfirm
 rm -rp /tmp/paru
 paru -S --noconfirm microsoft-edge-stable-bin waveterm-bin visual-studio-code-bin carapace-bin ollama
 
