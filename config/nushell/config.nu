@@ -22,8 +22,9 @@ $env.config.hooks.pre_prompt = ($env.config.hooks.pre_prompt? | default [] | app
     _waveterm_si_osc7
 })
 
-alias sudo = ^pass show user | ^sudo -S
-
+def --wrapped sudo [...args] {
+    ^pass show user | ^sudo -S ...$args
+}
 
 $env.config.show_banner = false
 $env.config.history.file_format = "sqlite"
@@ -35,6 +36,7 @@ $env.config.table.mode = "rounded"
 $env.config.table.trim = {methodology: "truncating" truncating_suffix: "..."}
 $env.config.filesize.precision = 2
 
+$env.COLUMNS = (term size).columns
 $env.STARSHIP_SHELL = "nu"
 $env.STARSHIP_SESSION_KEY = (random chars -l 16)
 $env.STARSHIP_CACHE = ($nu.default-config-dir | path join 'starship')
@@ -42,10 +44,10 @@ $env.STARSHIP_CONFIG = ($nu.default-config-dir | path join 'starship\starship.to
 $env.PROMPT_INDICATOR = ""
 $env.PROMPT_MULTILINE_INDICATOR = {|| starship prompt --continuation}
 $env.PROMPT_COMMAND = {||
-    starship prompt --cmd-duration $env.CMD_DURATION_MS $'--status=($env.LAST_EXIT_CODE)' --terminal-width (term size).columns
+    starship prompt --cmd-duration $env.CMD_DURATION_MS $'--status=($env.LAST_EXIT_CODE)' --terminal-width $env.COLUMNS
 }
 $env.PROMPT_COMMAND_RIGHT = {||
-    starship prompt --right --cmd-duration $env.CMD_DURATION_MS $'--status=($env.LAST_EXIT_CODE)' --terminal-width (term size).columns
+    starship prompt --right --cmd-duration $env.CMD_DURATION_MS $'--status=($env.LAST_EXIT_CODE)' --terminal-width $env.COLUMNS
 }
 
 const NU_PLUGIN_DIRS = [

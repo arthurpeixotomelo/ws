@@ -9,6 +9,9 @@
       "type": "stdio",
       "command": "nu",
       "args": ["--mcp"]
+    },
+    "penpot": {
+      "url": "https://design.penpot.app/mcp/stream?userToken=eyJhbGciOiJBMjU2S1ciLCJlbmMiOiJBMjU2R0NNIn0.fYGf8vksucmV5NXUB_Xbw0L-F4wrns5ehunaa5dt8QFsGUXJ1ly6Ew.oOX_BUEAlwH8Lac6.u5VqXdPgoTWfNm3KWC7BjJfI4J43upORzUnpTXodyGAYE4XMA57FG4leL7gAH2EMh1q5rdPXQkDB64aOjDwbQXZFcSIzL5NpxnZEjBok0wAxeNGeWGLlq_gLfPm2w9tTRDnl5r3eRdkSuBmn0hCjte9c4wGoBV8oLgGRc90I3ELEUOteJG3zE35ss5K3FYnEFWhjZqcL18Ac.lK_dmZ3uyqXDV_7CRdpHfg"
     }
   }
 }
