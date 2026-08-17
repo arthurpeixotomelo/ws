@@ -3,7 +3,7 @@
 # git clone https://github.com/arthurpeixotomelo/ws.git; nu /ws/config/setup.nu`
 
 # preinstallation packages
-# git base-devel flatpack xdg-desktop-portal-cosmic pass ffmpeg openrgb solaar uv deno nushell starship github-cli nerdctl containerd steam blender obs-studio
+# git base-devel flatpack xdg-desktop-portal-cosmic pass ffmpeg openrgb solaar github-cli nerdctl containerd opencode uv deno nushell starship steam blender obs-studio
 
 # save xdg global environment vars
 ["XDG_CONFIG_HOME=/ws/config", "XDG_DATA_HOME=/ws/config/data"] | str join (char nl) | save -a /etc/environment

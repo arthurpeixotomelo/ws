@@ -1,0 +1,9 @@
+{
+  "$schema": "https://opencode.ai/tui.json",
+  "cursor": {
+    "style": "default"
+  },
+  "attention": {
+    "enabled": true
+  }
+}

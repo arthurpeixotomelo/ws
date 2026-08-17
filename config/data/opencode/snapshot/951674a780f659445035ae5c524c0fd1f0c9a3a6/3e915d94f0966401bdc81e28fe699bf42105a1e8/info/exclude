@@ -1,0 +1,20 @@
+# git ls-files --others --exclude-from=.git/info/exclude
+# Lines that start with '#' are comments.
+# For a project mostly in C, the following would be a good set of
+# exclude patterns (uncomment them if you want to use them):
+# *.[oa]
+# *~
+/visualization_outputs/brand_bershka_sankey_engagement_cohorts.html
+/visualization_outputs/brand_boohoo_sankey_engagement_cohorts.html
+/visualization_outputs/brand_chanelofficial_sankey_engagement_cohorts.html
+/visualization_outputs/brand_dior_sankey_engagement_cohorts.html
+/visualization_outputs/brand_gucci_sankey_engagement_cohorts.html
+/visualization_outputs/brand_louisvuitton_sankey_engagement_cohorts.html
+/visualization_outputs/brand_mango_sankey_engagement_cohorts.html
+/visualization_outputs/brand_prada_sankey_engagement_cohorts.html
+/visualization_outputs/brand_stradivarius_sankey_engagement_cohorts.html
+/visualization_outputs/brand_zara_sankey_engagement_cohorts.html
+/visualization_outputs/cleaned_dataset.csv
+/visualization_outputs/fast_segment_sankey_engagement_cohorts.html
+/visualization_outputs/full_dataset_sankey_engagement_cohorts.html
+/visualization_outputs/luxury_segment_sankey_engagement_cohorts.html

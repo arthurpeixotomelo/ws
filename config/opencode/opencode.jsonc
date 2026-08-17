@@ -1,0 +1,55 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "small_model": "llama/qwen3.5-9b-ud-q4_k_xl",
+  "instructions": ["~/config/opencode/penpot/AGENTS.md"],
+  "mcp": {
+    "nushell": {
+      "type": "local",
+      "command": ["nu", "--mcp"],
+      "enabled": false
+    },
+    "context": {
+      "type": "local",
+      "command": [
+        "dx",
+        "-A",
+        "npm:@upstash/context7-mcp",
+        "--api-key",
+        "{env:CTX7_API_KEY}"
+      ],
+      "enabled": false
+    },
+    "penpot-local": {
+      "type": "local",
+      "command": ["dx", "-A", "npm:@penpot/mcp"],
+      "enabled": false
+    },
+    "penpot-remote": {
+      "type": "remote",
+      "url": "https://design.penpot.app/mcp/stream?userToken=eyJhbGciOiJBMjU2S1ciLCJlbmMiOiJBMjU2R0NNIn0.fYGf8vksucmV5NXUB_Xbw0L-F4wrns5ehunaa5dt8QFsGUXJ1ly6Ew.oOX_BUEAlwH8Lac6.u5VqXdPgoTWfNm3KWC7BjJfI4J43upORzUnpTXodyGAYE4XMA57FG4leL7gAH2EMh1q5rdPXQkDB64aOjDwbQXZFcSIzL5NpxnZEjBok0wAxeNGeWGLlq_gLfPm2w9tTRDnl5r3eRdkSuBmn0hCjte9c4wGoBV8oLgGRc90I3ELEUOteJG3zE35ss5K3FYnEFWhjZqcL18Ac.lK_dmZ3uyqXDV_7CRdpHfg",
+      "enabled": false
+    }
+  },
+  "provider": {
+    "nvidia": {
+      "whitelist": [
+        "z-ai/glm-5.2",
+        "minimaxai/minimax-m3",
+        "meta/muse-glimmer-30b",
+        "poolside/laguna-xs-2.1"
+      ]
+    },
+    "llama.cpp": {
+      "name": "llama",
+      "npm": "@ai-sdk/openai-compatible",
+      "options": {
+        "baseURL": "http://127.0.0.1:8080/v1"
+      },
+      "models": {
+        "qwen3.5-9b-ud-q4_k_xl": {
+          "name": "Qwen 3.5 9B"
+        }
+      }
+    }
+  }
+}
