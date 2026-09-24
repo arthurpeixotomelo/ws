@@ -1,4 +1,7 @@
 {
+  "exclude": [
+    "node_modules/"
+  ],
   "compilerOptions": {
     "lib": [
       "deno.ns",
@@ -17,6 +20,7 @@
     "semiColons": false,
     "trailingCommas": "never"
   },
+  "nodeModulesDir": "auto",
   "lint": {
     "rules": {
       "tags": [

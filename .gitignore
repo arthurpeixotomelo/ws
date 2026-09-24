@@ -1,6 +1,7 @@
 /config/data/opencode/auth.json
 ts/*/
 py/*/
+*.msgpackz
 *.sock
 *.lock
 *.log

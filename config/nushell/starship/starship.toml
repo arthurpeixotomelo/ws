@@ -25,6 +25,7 @@ $line_break\
 $character
 """
 right_format = '$time'
+command_timeout = 2000
 
 [aws]
 symbol = 'aws '
