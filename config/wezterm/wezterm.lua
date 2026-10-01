@@ -20,7 +20,7 @@ end)
 
 config.front_end = "WebGpu"
 config.window_decorations = "INTEGRATED_BUTTONS"
-config.default_prog = { 'C:/Program Files/nu/bin/nu.exe' }
+config.default_prog = { '/usr/bin/nu' }
 config.scroll_to_bottom_on_input = false
 
 return config
