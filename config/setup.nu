@@ -3,6 +3,9 @@
 mkdir ~/.local/share/applications/ | cp /usr/share/applications/org.wezfurlong.wezterm.desktop ~/.local/share/applications/
 open .local/share/applications/org.wezfurlong.wezterm.desktop | str replace -a "wezterm start" "env XDG_CONFIG_HOME=/home/arthy/ws/config wezterm start" | save -f .local/share/applications/org.wezfurlong.wezterm.desktop
 
+# set git global conf
+git config --global user.email "arthurpeixotomelo@gmail.com" | git config --global user.name "Arthur Peixoto Melo" | git config --global init.defaultBranch main
+
 # install paru (AUR helper) and then install AUR packages
 git clone https://aur.archlinux.org/paru.git /tmp/paru
 cd /tmp/paru; makepkg -si --noconfirm
