@@ -1,4 +1,4 @@
-$env.Path = ($env.Path | split row (char esep) | where { $in != "C:/Users/arthu/ws/config/carapace/bin" } | prepend "C:/Users/arthu/ws/config/carapace/bin")
+$env.PATH = ($env.PATH | split row (char esep) | where { $in != "/home/arthy/ws/config/carapace/bin" } | prepend "/home/arthy/ws/config/carapace/bin")
 
 def --env get-env [name] { $env | get $name }
 def --env set-env [name, value] { load-env { $name: $value } }
@@ -16,9 +16,9 @@ let carapace_completer = {|spans|
   # overwrite
   let spans = (if $expanded_alias != null  {
     # put the first word of the expanded alias first in the span
-    $spans | skip 1 | prepend ($expanded_alias | split row " " | take 1 | str replace --regex  '\.exe$' '')
+    $spans | skip 1 | prepend ($expanded_alias | split row " " | take 1)
   } else {
-    $spans | skip 1 | prepend ($spans.0 | str replace --regex  '\.exe$' '')
+    $spans | skip 1 | prepend ($spans.0)
   })
 
   carapace $spans.0 nushell ...$spans
