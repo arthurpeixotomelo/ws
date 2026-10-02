@@ -160,6 +160,7 @@
     "packages": [
         "act",
         "base-devel",
+        "btop",
         "containerd",
         "deno",
         "ffmpeg",
@@ -171,7 +172,9 @@
         "opencode",
         "pass",
         "starship",
+        "tailscale",
         "uv",
+        "wezterm",
         "xdg-desktop-portal-cosmic"
     ],
     "pacman_config": {

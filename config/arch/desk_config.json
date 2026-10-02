@@ -70,6 +70,7 @@
         "act",
         "base-devel",
         "blender",
+        "btop",
         "containerd",
         "deno",
         "ffmpeg",
@@ -84,9 +85,11 @@
         "openrgb",
         "pass",
         "starship",
+        "steam",
+        "tailscale",
         "uv",
-        "xdg-desktop-portal-cosmic",
-        "steam"
+        "wezterm",
+        "xdg-desktop-portal-cosmic"
     ],
     "pacman_config": {
         "color": true,

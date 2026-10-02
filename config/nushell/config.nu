@@ -10,6 +10,10 @@ def --wrapped sudo [...args] {
     ^pass show user | ^sudo -S ...$args
 }
 
+def sys [cmd: string, ...args] {
+    env -u XDG_CONFIG_HOME $cmd ...$args
+}
+
 $env.config.show_banner = false
 $env.config.filesize.precision = 2
 $env.config.shell_integration.osc7 = true
