@@ -29,7 +29,7 @@ update-desktop-database ($user_app_dir | str replace -r "/$" "")
 git clone https://aur.archlinux.org/paru.git /tmp/paru
 cd /tmp/paru; makepkg -si --noconfirm
 cd /home/arthy; rm -rp /tmp/paru
-paru -S --noconfirm microsoft-edge-stable-bin visual-studio-code-bin carapace-bin openlogi-bin rustdesk-bin
+paru -S --noconfirm microsoft-edge-stable-bin visual-studio-code-bin carapace-bin openlogi-bin rustdesk-bin otf-conerdenewroman-nerd
 
 # uninstall unused packages
 ^sudo pacman --noconfirm -Rns vim

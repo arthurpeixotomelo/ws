@@ -13,6 +13,7 @@ wezterm.on("update-status", function(window, pane)
     end
 end)
 
+config.font = wezterm.font('CodeNewRoman Nerd Font Mono')
 config.default_prog = { '/usr/bin/nu' }
 config.warn_about_missing_glyphs = false
 
