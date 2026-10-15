@@ -24,18 +24,17 @@ $env.config.cursor_shape.emacs = "blink_line"
 $env.config.highlight_resolved_externals = true
 $env.config.table.trim = {methodology: "truncating" truncating_suffix: "..."}
 
+$env.PATH = ($env.PATH | prepend [$"($env.HOME)/.local/bin" $"($env.HOME)/.local/share/pnpm/bin"])
 $env.STARSHIP_SHELL = "nu"
 $env.STARSHIP_SESSION_KEY = (random chars -l 16)
-$env.STARSHIP_CACHE = ($nu.default-config-dir | path join 'starship')
-$env.STARSHIP_CONFIG = ($nu.default-config-dir | path join 'starship\starship.toml')
+$env.STARSHIP_CACHE = ($nu.default-config-dir | path join "starship")
+$env.STARSHIP_CONFIG = ($nu.default-config-dir | path join "starship/starship.toml")
 $env.PROMPT_INDICATOR = ""
 $env.PROMPT_MULTILINE_INDICATOR = {|| ^starship prompt --continuation}
-$env.PROMPT_COMMAND = {||
-    ^starship prompt --cmd-duration $env.CMD_DURATION_MS $'--status=($env.LAST_EXIT_CODE)'
-}
+$env.PROMPT_COMMAND = {|| ^starship prompt --cmd-duration $env.CMD_DURATION_MS $"--status=($env.LAST_EXIT_CODE)"}
 $env.PROMPT_COMMAND_RIGHT = {|| ^starship prompt --right}
 
 const NU_PLUGIN_DIRS = [
     ($nu.current-exe | path dirname)
-    ($nu.default-config-dir | path join 'plugins')
+    ($nu.default-config-dir | path join "plugins")
 ]

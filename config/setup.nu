@@ -27,13 +27,15 @@ update-desktop-database ($user_app_dir | str replace -r "/$" "")
 
 # install paru (AUR helper) and then install AUR packages
 git clone https://aur.archlinux.org/paru.git /tmp/paru
-cd /tmp/paru; makepkg -si --noconfirm
-cd /home/arthy; rm -rp /tmp/paru
+cd /tmp/paru; makepkg -si --noconfirm; cd /home/arthy; rm -rp /tmp/paru
 paru -S --noconfirm microsoft-edge-stable-bin visual-studio-code-bin carapace-bin openlogi-bin rustdesk-bin otf-conerdenewroman-nerd
 
+# install packages via sh
+curl -fsSL https://get.pnpm.io | sh; rm -r ~/.config/nushell/
+curl -fsSL https://llama.app/install.sh | sh
+
 # uninstall unused packages
-^sudo pacman --noconfirm -Rns vim
-pacman -Qdtq | ^sudo pacman --noconfirm -Rns -
+^sudo pacman --noconfirm -Rns vim ...(^pacman -Qdtq | lines)
 
 # setup gpg and pass 
 r#'
@@ -43,6 +45,4 @@ Name-Real: Arthur Peixoto Melo
 Name-Email: arthurpeixotomelo@gmail.com
 Expire-Date: 0
 '# | gpg --batch --yes --pinentry-mode loopback --passphrase '' --full-generate-key
-gpg --list-secret-keys
-pass init (gpg --list-secret-keys | lines | get 3 | str trim)
-pass insert user
+gpg --list-secret-keys;pass init (gpg --list-secret-keys | lines | get 3 | str trim);pass insert user
