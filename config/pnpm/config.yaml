@@ -1,0 +1,8 @@
+saveExact: true
+saveTypes: true
+autoDedupe: true
+dedupePeers: true
+scriptShell: 'nu'
+catalogPrune: true
+dedupeDirectDeps: true
+autoInstallPeersFromHighestMatch: true

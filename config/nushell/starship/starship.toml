@@ -40,12 +40,6 @@ format = '[$name]($style) '
 min_time = 0
 show_milliseconds = true
 
-[deno]
-symbol = 'deno '
-detect_extensions = ['js', 'mjs', 'ts', 'mts']
-detect_files = ['package.json', 'deno.json', 'deno.jsonc', 'deno.lock']
-detect_folders = ['node_modules']
-
 [gcloud]
 symbol = "gcp "
 
@@ -72,6 +66,9 @@ format = '[$hostname]($style) in '
 disabled = false
 symbol = 'kube '
 detect_files = ['k3s', 'k8s']
+
+[nodejs]
+symbol = 'node '
 
 [package]
 display_private = true

@@ -1,0 +1,32 @@
+[
+    (
+        name: "System Utilities",
+        icon: "folder-symbolic",
+        filter: Categories(
+            categories: [
+                "Utility",
+            ],
+            exclude: [
+                "com.system76.CosmicEdit",
+                "com.system76.CosmicFiles",
+                "vim",
+                "solaar",
+                "org.openrgb.OpenRGB",
+                "waveterm",
+                "com.system76.CosmicScreenshot",
+                "org.wezfurlong.wezterm",
+            ],
+            include: [
+                "nm-connection-editor",
+                "htop",
+                "qt6ct",
+                "qvidcap",
+                "qv4l2",
+                "lstopo",
+                "bssh",
+                "bvnc",
+                "avahi-discover",
+            ],
+        ),
+    ),
+]

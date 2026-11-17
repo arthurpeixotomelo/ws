@@ -1,0 +1,3 @@
+{
+    Terminal: "env XDG_CONFIG_HOME=/home/arthy/ws/config/ wezterm start --cwd .",
+}

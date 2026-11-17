@@ -18,10 +18,10 @@ cp $"($sys_app_dir)org.wezfurlong.wezterm.desktop" $"($sys_app_dir)microsoft-edg
 $"($user_app_dir)org.wezfurlong.wezterm.desktop" | do {
     let file = $in
     open $file | str replace "wezterm start" $"env XDG_CONFIG_HOME=($xdg_config_dir) wezterm start" | save -f $file
-}
+} 
 $"($user_app_dir)microsoft-edge.desktop" | do {
     let file = $in
-    open $file | str replace "/usr/bin/microsoft-edge-stable --inprivate" "env XDG_CONFIG_HOME=/home/arthy/.config /usr/bin/microsoft-edge-stable --inprivate" | save -f $file
+    open $file | str replace -a "Exec=/usr/bin/microsoft-edge-stable" "Exec=env XDG_CONFIG_HOME=/home/arthy/.config /usr/bin/microsoft-edge-stable" | save -f $file
 }
 update-desktop-database ($user_app_dir | str replace -r "/$" "")
 
@@ -33,6 +33,9 @@ paru -S --noconfirm microsoft-edge-stable-bin visual-studio-code-bin carapace-bi
 # install packages via sh
 curl -fsSL https://get.pnpm.io | sh; rm -r ~/.config/nushell/
 curl -fsSL https://llama.app/install.sh | sh
+
+# install pnpm global packages
+pnpm i -g vercel neon
 
 # uninstall unused packages
 ^sudo pacman --noconfirm -Rns vim ...(^pacman -Qdtq | lines)
