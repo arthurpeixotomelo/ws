@@ -1,0 +1,24 @@
+{
+  "id": "d59d7695-f296-4817-816e-f9f99a4cd458",
+  "name": "axe",
+  "projectResources": {
+    "resources": [
+      {
+        "gitFolder": {
+          "folderUri": "file:///c%3A/Users/arthu/ws/ts/axe",
+          "defaultBranch": "main"
+        }
+      }
+    ]
+  },
+  "permissionGrants": {
+    "permissionGrants": {
+      "allow": [
+        "command(deno task lint)"
+      ]
+    },
+    "v2Migrated": true
+  },
+  "settings": {},
+  "isWorkspaceOnly": false
+}

@@ -1,0 +1,15 @@
+{
+  "id":  "064558af-6590-40c9-8711-8c39f880f668",
+  "name":  "feature-ci",
+  "projectResources":  {
+    "resources":  [
+      {
+        "gitFolder":  {
+          "folderUri":  "file:///c%3A/Users/arthu/ws/ts/axe/feature-ci"
+        }
+      }
+    ]
+  },
+  "settings":  {},
+  "isWorkspaceOnly":  false
+}

@@ -1,0 +1,16 @@
+{
+  "id":  "2052e56b-db7d-4d00-8a45-e429f3ea8686",
+  "name":  "img_processing",
+  "projectResources":  {
+    "resources":  [
+      {
+        "gitFolder":  {
+          "folderUri":  "file:///c%3A/Users/arthu/ws/py/img_processing",
+          "defaultBranch":  "main"
+        }
+      }
+    ]
+  },
+  "settings":  {},
+  "isWorkspaceOnly":  false
+}
