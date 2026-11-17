@@ -5,6 +5,8 @@ local cached_metrics = "..."
 local config = wezterm.config_builder()
 
 config.status_update_interval = 50
+-- config.integrated_title_button_style = "Gnome"
+-- config.window_decorations = "INTEGRATED_BUTTONS|RESIZE"
 config.default_prog = { '/usr/bin/nu' }
 config.warn_about_missing_glyphs = false
 config.font = wezterm.font('CodeNewRoman Nerd Font')
