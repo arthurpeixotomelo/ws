@@ -2,7 +2,9 @@ saveExact: true
 saveTypes: true
 autoDedupe: true
 dedupePeers: true
-scriptShell: 'nu'
+scriptShell: "nu"
 catalogPrune: true
 dedupeDirectDeps: true
 autoInstallPeersFromHighestMatch: true
+lockfile:
+  includeResolutionSettings: true
